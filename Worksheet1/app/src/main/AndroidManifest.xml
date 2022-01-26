@@ -10,14 +10,29 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Worksheet1">
         <activity
-            android:name=".MainActivity"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+            android:name=".Screen8Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Screen7Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Screen6Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Screen5Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Screen4Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Screen3Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Screen2Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Screen1Activity"
+            android:exported="false" />
     </application>
 
 </manifest>
