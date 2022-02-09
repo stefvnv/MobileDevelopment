@@ -4,44 +4,39 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_weight="75"
-    android:onClick="showEclipse"
     android:orientation="vertical"
-    android:weightSum="100"
-    tools:context=".Ex2Activity">
+    tools:context=".SimpleBrowserActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="15"
         android:gravity="center"
-        android:orientation="horizontal"
+        android:orientation="vertical"
         android:weightSum="100">
 
-        <ImageButton
-            android:id="@+id/imageButton"
-            android:layout_width="wrap_content"
+        <EditText
+            android:id="@+id/editText"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_gravity="center|center_horizontal"
-            android:layout_marginRight="20sp"
-            android:onClick="showEclipse"
-            app:srcCompat="@drawable/eclipse"
+            android:ems="10"
+            android:inputType="textPersonName"
             tools:ignore="SpeakableTextPresentCheck" />
 
-        <ImageButton
-            android:id="@+id/imageButton2"
-            android:layout_width="wrap_content"
+        <Button
+            android:id="@+id/button"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:onClick="showIntellij"
-            app:srcCompat="@drawable/intellij"
-            tools:ignore="SpeakableTextPresentCheck" />
+            android:layout_marginLeft="10sp"
+            android:layout_marginRight="10sp"
+            android:layout_weight="100"
+            android:text="OPEN" />
+
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_weight="85"
+        android:layout_weight="70"
         android:orientation="horizontal"
         android:weightSum="100">
 
