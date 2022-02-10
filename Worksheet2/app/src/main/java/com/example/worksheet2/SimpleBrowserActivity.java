@@ -21,7 +21,7 @@ public class SimpleBrowserActivity extends AppCompatActivity {
         myBrowser.loadUrl("https://www.google.ie");
 
 
-        final EditText et = findViewById(R.id.editText);
+        final EditText et = findViewById(R.id.longituteText);
         Button button = findViewById(R.id.button);
 
         button.setOnClickListener(new View.OnClickListener() {
@@ -31,6 +31,5 @@ public class SimpleBrowserActivity extends AppCompatActivity {
                 myBrowser.loadUrl(myText);
             }
         });
-
     }
 }

@@ -4,70 +4,111 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#8BC34A"
     android:orientation="vertical"
     tools:context=".Ex3Activity">
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_weight="50"
+        android:layout_height="match_parent"
+        android:layout_margin="10sp"
+        android:layout_weight="100"
+        android:background="@drawable/globe"
         android:gravity="center"
-        android:orientation="horizontal"
+        android:orientation="vertical"
         android:weightSum="100">
 
-        <EditText
-            android:id="@+id/editTextTextPersonName2"
+        <TextView
+            android:id="@+id/textView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:ems="10"
             android:gravity="center"
-            android:inputType="textPersonName"
-            android:text="Name" />
+            android:shadowColor="#190F0F"
+            android:text="Open map"
+            android:textColor="#FFFFFF"
+            android:textSize="34sp" />
 
         <EditText
-            android:id="@+id/editTextTextPersonName3"
-            android:layout_width="wrap_content"
+            android:id="@+id/longituteText"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
+            android:layout_marginTop="30sp"
+            android:layout_marginBottom="20sp"
+            android:background="#C1FFFFFF"
             android:ems="10"
+            android:gravity="center"
+            android:hint="Enter longitute"
             android:inputType="textPersonName"
-            android:text="Name" />
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+        <EditText
+            android:id="@+id/latitudeText3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30sp"
+            android:layout_marginBottom="20sp"
+            android:background="#C6FFFFFF"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="Enter latitude"
+            android:inputType="textPersonName"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
         <Button
-            android:id="@+id/button11"
-            android:layout_width="wrap_content"
+            android:id="@+id/button"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
+            android:layout_marginTop="20sp"
+            android:layout_marginBottom="50sp"
             android:layout_weight="100"
-            android:text="Button" />
+            android:onClick="openMap"
+            android:text="OPEN" />
+
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_weight="50"
-        android:background="#0588A8"
+        android:layout_height="match_parent"
+        android:layout_margin="10sp"
+        android:layout_weight="100"
         android:gravity="center"
-        android:orientation="horizontal"
+        android:orientation="vertical"
         android:weightSum="100">
 
-        <EditText
-            android:id="@+id/editTextTextPersonName"
+        <TextView
+            android:id="@+id/textView2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:shadowColor="#190F0F"
+            android:text="Make a call"
+            android:textColor="#FFFFFF"
+            android:textSize="34sp" />
+
+        <EditText
+            android:id="@+id/numberText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40sp"
+            android:layout_weight="1"
+            android:background="#BEFFFFFF"
             android:ems="10"
+            android:gravity="center"
+            android:hint="Enter phone number"
             android:inputType="textPersonName"
-            android:text="Name"
-            tools:ignore="TouchTargetSizeCheck" />
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
         <Button
-            android:id="@+id/button9"
+            android:id="@+id/button11"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="60sp"
+            android:layout_marginBottom="80sp"
             android:layout_weight="100"
-            android:gravity="center"
+            android:onClick="openPhone"
             android:text="CALL" />
 
     </LinearLayout>
+
 </LinearLayout>

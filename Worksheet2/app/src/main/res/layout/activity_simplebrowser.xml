@@ -15,7 +15,7 @@
         android:weightSum="100">
 
         <EditText
-            android:id="@+id/editText"
+            android:id="@+id/longituteText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
