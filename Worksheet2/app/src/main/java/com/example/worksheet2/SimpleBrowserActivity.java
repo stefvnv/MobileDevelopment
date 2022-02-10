@@ -21,7 +21,7 @@ public class SimpleBrowserActivity extends AppCompatActivity {
         myBrowser.loadUrl("https://www.google.ie");
 
 
-        final EditText et = findViewById(R.id.longituteText);
+        final EditText et = findViewById(R.id.browserText);
         Button button = findViewById(R.id.button);
 
         button.setOnClickListener(new View.OnClickListener() {

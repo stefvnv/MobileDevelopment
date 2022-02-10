@@ -17,21 +17,22 @@ public class Ex3Activity extends AppCompatActivity {
     }
 
     public void openMap (View view) {
+        EditText longitude = findViewById(R.id.browserText);
+        EditText latitude = findViewById(R.id.latitudeText3);
+
         Intent i = new Intent();
         i.setAction(Intent.ACTION_VIEW);
-        i.setData(Uri.parse("geo:53.420105,-7.906492"));
+        i.setData(Uri.parse("geo:" + longitude.getText().toString() + "," + latitude.getText().toString()));
         startActivity(i);
     }
 
     public void openPhone (View view) {
-        final EditText phoneNo = findViewById(R.id.numberText);
+        EditText phoneNo = findViewById(R.id.numberText);
 
         Intent i = new Intent();
         i.setAction(Intent.ACTION_DIAL);
-        i.setData(Uri.parse("tel:" + phoneNo));
+        i.setData(Uri.parse("tel:" + phoneNo.getText().toString()));
         if (i.resolveActivity(getPackageManager()) != null)
             startActivity(i);
     }
-
-
 }
