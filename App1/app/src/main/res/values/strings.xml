@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">App1</string>
+    <string name="enter_your_name_below">Enter your name below...</string>
+    <string name="textview">TextView</string>
+    <string name="string_textview" />
+    <string name="welcome">Welcome</string>
+    <string name="name">Name</string>
+</resources>
