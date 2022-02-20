@@ -1,8 +1,39 @@
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
     <string name="app_name">App1</string>
-    <string name="enter_your_name_below">Enter your name below...</string>
-    <string name="textview">TextView</string>
+    <string name="enter_your_name_below">Enter your name below…</string>
+    <string name="receiveName">TextView</string>
     <string name="string_textview" />
     <string name="welcome">Welcome</string>
     <string name="name">Name</string>
+    <string name="Proceed">Continue</string>
+    <string name="what_should_we_call_you">What should we call you?</string>
+    <string name="spaniscape">Spaniscape</string>
+    <string name="type_name">Type name</string>
+    <string name="what_would_you_like_to_do">What would you like to do?</string>
+    <string name="explore_spain">Explore Spain</string>
+    <string name="learn_spanish">Learn Spanish</string>
+    <string name="receiveName2">TextView</string>
+    <string name="where_in_spain_would_you_like_to_travel">where in Spain would you like to travel?</string>
+    <string name="barcelona">Barcelona</string>
+    <string name="madrid">Madrid</string>
+    <string name="seville">Seville</string>
+    <string name="palma_de_mallorca">Palma de Mallorca</string>
+    <string name="granada">Granada</string>
+    <string name="other">Other</string>
+    <string name="explore">EXPLORE</string>
+    <string name="where_would_you_like_to_travel">Where would you like to travel?</string>
+    <string name="barc">Barcelona</string>
+    <string name="barcelona_description">Barcelona is the country’s second city but it is Spain’s most popular destination for international visitors. It is a laid-back city which offers stunning coastlines combined with a wide range of things to see and do.
+        The city is synonymous with Antoni Gaudí, the architect whose other-worldly structures attract millions of visitors each year. The Sagrada Familia is the most famous and most extravagant and no one should miss a chance to visit the jaw-dropping church.
+        Other highlights include the Fundación de Joan Miro, Camp Nou (Barcelona F.C.’s stadium), Montjuic, and the Picasso Museum.
+    </string>
+    <string name="our_hotel_recommendation">Our hotel recommendation</string>
+    <string name="bacelona_hotel_description">The essence of luxury travel, this sumptuous five-star hotel is ideally located right in the heart of Barcelona and connects guests with the very best of the city’s cultural charms. Seamless service paired with
+        a wealth of refined dining and leisure facilities makes for a thoroughly indulgent stay.</string>
+    <string name="almanac_barcelona">Almanac Barcelona</string>
+    <string name="barcelonaone">barcelonaone</string>
+    <string name="barcelona_location">location</string>
+    <string name="barcelona_website">website</string>
+    <string name="arrow" />
+    <string name="barcelona_call">call</string>
 </resources>

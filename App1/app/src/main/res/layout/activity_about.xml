@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/orange"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".AboutActivity">
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10sp"
+        android:text="@string/where_would_you_like_to_travel"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30sp"
+        android:layout_marginTop="20sp"
+        android:layout_marginRight="30sp">
+
+        <RadioButton
+            android:id="@+id/barcelona"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:buttonTint="#DFC800"
+            android:text="@string/barcelona"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp" />
+
+        <RadioButton
+            android:id="@+id/madrid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:buttonTint="#DFC800"
+            android:text="@string/madrid"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp" />
+
+        <RadioButton
+            android:id="@+id/seville"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:buttonTint="#DFC800"
+            android:text="@string/seville"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp" />
+
+        <RadioButton
+            android:id="@+id/palma"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:buttonTint="#DFC800"
+            android:text="@string/palma_de_mallorca"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp" />
+
+        <RadioButton
+            android:id="@+id/granada"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:buttonTint="#DFC800"
+            android:text="@string/granada"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp" />
+
+        <RadioButton
+            android:id="@+id/other"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:buttonTint="#DFC800"
+            android:text="@string/other"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnXplore"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="100sp"
+        android:layout_marginTop="40sp"
+        android:layout_marginRight="100sp"
+        android:backgroundTint="#FFC107"
+        android:onClick="goCity"
+        android:text="@string/explore"
+        app:cornerRadius="20sp" />
+</LinearLayout>

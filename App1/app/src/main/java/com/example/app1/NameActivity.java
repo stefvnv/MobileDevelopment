@@ -18,7 +18,6 @@ public class NameActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_name);
 
-
         //Pass Text
         editName = findViewById(R.id.editName);
         btnContinue = findViewById(R.id.btnContinue);
