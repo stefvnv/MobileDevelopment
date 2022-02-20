@@ -26,10 +26,24 @@ public class AboutActivity extends AppCompatActivity {
         int selectedId = radioGroup.getCheckedRadioButtonId();
         radioCity = (RadioButton) findViewById(selectedId);
 
-        if(selectedId == R.id.barcelona) {
+        if (selectedId == R.id.barcelona) {
             Intent i = new Intent(AboutActivity.this, BarcelonaActivity.class);
             startActivity(i);
-            // }else if (selectedId == R.id.)
+        } else if (selectedId == R.id.madrid) {
+            Intent i = new Intent(AboutActivity.this, MadridActivity.class);
+            startActivity(i);
+        } else if (selectedId == R.id.seville) {
+            Intent i = new Intent(AboutActivity.this, SevilleActivity.class);
+            startActivity(i);
+        } else if (selectedId == R.id.palma) {
+            Intent i = new Intent(AboutActivity.this, PalmaActivity.class);
+            startActivity(i);
+        } else if (selectedId == R.id.granada) {
+            Intent i = new Intent(AboutActivity.this, GranadaActivity.class);
+            startActivity(i);
+        } else if (selectedId == R.id.other) {
+            Intent i = new Intent(AboutActivity.this, OtherActivity.class);
+            startActivity(i);
         }
     }
 }

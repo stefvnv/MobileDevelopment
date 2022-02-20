@@ -9,12 +9,12 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 
-public class BarcelonaActivity extends AppCompatActivity {
+public class PalmaActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_barcelona);
+        setContentView(R.layout.activity_palma);
 
         //Java Button Clicks
         Button btnLocation = findViewById(R.id.btnLocation);
@@ -28,7 +28,7 @@ public class BarcelonaActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent i = new Intent();
                 i.setAction(Intent.ACTION_VIEW);
-                i.setData(Uri.parse("geo:41.390694412075405, 2.169346519721641"));
+                i.setData(Uri.parse("geo:39.5690693130226, 2.6526244268922614"));
                 startActivity(i);
             }
         });
@@ -36,7 +36,7 @@ public class BarcelonaActivity extends AppCompatActivity {
         btnWebsite.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Uri uri = Uri.parse("https://www.almanachotels.com/barcelona");
+                Uri uri = Uri.parse("https://hotelsantfrancesc.com/en");
                 Intent intent = new Intent(Intent.ACTION_VIEW, uri);
                 startActivity(intent);
             }
@@ -47,7 +47,7 @@ public class BarcelonaActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent i = new Intent();
                 i.setAction(Intent.ACTION_DIAL);
-                i.setData(Uri.parse("tel:" + "+34930187000"));
+                i.setData(Uri.parse("tel:" + "+34971495000"));
                 if (i.resolveActivity(getPackageManager()) != null)
                     startActivity(i);
             }
@@ -60,16 +60,16 @@ public class BarcelonaActivity extends AppCompatActivity {
         String resource = (String) imageView.getTag();
 
         if (resource.equalsIgnoreCase("1")) {
-            imageView.setImageResource(R.drawable.barcelonafour);
+            imageView.setImageResource(R.drawable.palmafour);
             imageView.setTag("4");
         } else if (resource.equalsIgnoreCase("4")) {
-            imageView.setImageResource(R.drawable.barcelonathree);
+            imageView.setImageResource(R.drawable.palmathree);
             imageView.setTag("3");
         } else if (resource.equalsIgnoreCase("3")) {
-            imageView.setImageResource(R.drawable.barcelonatwo);
+            imageView.setImageResource(R.drawable.palmatwo);
             imageView.setTag("2");
         } else {
-            imageView.setImageResource(R.drawable.barcelonaone);
+            imageView.setImageResource(R.drawable.palmaone);
             imageView.setTag("1");
         }
     }
@@ -79,16 +79,16 @@ public class BarcelonaActivity extends AppCompatActivity {
         String resource = (String) imageView.getTag();
 
         if (resource.equalsIgnoreCase("1")) {
-            imageView.setImageResource(R.drawable.barcelonatwo);
+            imageView.setImageResource(R.drawable.palmatwo);
             imageView.setTag("2");
         } else if (resource.equalsIgnoreCase("2")) {
-            imageView.setImageResource(R.drawable.barcelonathree);
+            imageView.setImageResource(R.drawable.palmathree);
             imageView.setTag("3");
         } else if (resource.equalsIgnoreCase("3")) {
-            imageView.setImageResource(R.drawable.barcelonafour);
+            imageView.setImageResource(R.drawable.palmafour);
             imageView.setTag("4");
         } else {
-            imageView.setImageResource(R.drawable.barcelonaone);
+            imageView.setImageResource(R.drawable.palmaone);
             imageView.setTag("1");
         }
     }

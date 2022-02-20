@@ -32,8 +32,41 @@
         a wealth of refined dining and leisure facilities makes for a thoroughly indulgent stay.</string>
     <string name="almanac_barcelona">Almanac Barcelona</string>
     <string name="barcelonaone">barcelonaone</string>
-    <string name="barcelona_location">location</string>
-    <string name="barcelona_website">website</string>
+    <string name="location">location</string>
+    <string name="website">website</string>
     <string name="arrow" />
-    <string name="barcelona_call">call</string>
+    <string name="call">call</string>
+    <string name="madrid_description">Madrid actually receives more visitors per year than Barcelona, however, Spain’s capital receives fewer foreign visitors. The city is famous for its world-class museums, such as the El Prado Museum as well as one of
+        the liveliest nightlife scenes in the world. Some of the other bets sights to see include the Retiro Park, the Royal Palace and Gardens, Plaza Mayor (the capital’s main square), and the Temple of Debod. Madrid may not have a beach like Barcelona
+        but it makes up for it with its abundance of cultural points of interest.
+    </string>
+    <string name="madrid_hotel_description">The Gran Hotel Inglés brings a whole new level of luxury to the Madrid hotel scene, with stylish Art Deco design, sumptuous rooms, a quietly excellent restaurant and a superb spa. Although it is right in the
+        middle of the city, the clubby vibe means you may well not want to move from the lobby bar.
+    </string>
+    <string name="madrid_one">Madrid</string>
+    <string name="gran_hotel_ingles">Gran Hotel Ingles</string>
+    <string name="seville_description">Seville is the capital of Spain’s southern Andalusia region and it is famous for sunny weather, flamenco dancing, and a some of Spain’s most historical landmarks. These include the exquisite Alcazar Castle complex
+        (built during the Moorish Almohad dynasty) and the Gothic Seville Cathedral where Christopher Columbus’ tomb lies.
+        The city’s streets and squares and lively and atmospheric as are the bars and restaurants (it is one of the best places in the country for tapas). There are also some sensational museums, art exhibitions, theatres, and theme parks, so there really I something for everyone.
+    </string>
+    <string name="seville_hotel_description">So discreet it doesn\'t even have a sign, this restored 17th-century mansion hidden down a tiny alley in Santa Cruz offers service worthy of a five-star establishment, plus nightly live guitar performances,
+        a superbly stocked bar, and a large roof terrace with cathedral views.
+    </string>
+    <string name="sev">Seville</string>
+    <string name="palma_description">If you are looking for sun, sea, and sand, Palma de Mallorca is the perfect location. The beaches are the main attraction, and they are magnificent, but the city also has some other landmarks worth visiting such as the Royal Palace of la Almudena and the cathedral.
+        Palma is the capital of the island of Mallorca, situated in the Balearic Sea. From Palma you can explore the rest of the island easily and also visit the neighboring Menorca which is also very beautiful.
+    </string>
+    <string name="palma_hotel_description">This skilfully renovated, 19th-century mansion and boutique five-star is situated in the Capital\'s atmospheric historic quarter. It is a peaceful refuge, and has a spectacular rooftop pool and gastronomic restaurant.
+        The city\'s leading attractions, including galleries, cafés and shops, can all be reached on foot.
+    </string>
+    <string name="palm">Palma de Mallorca</string>
+    <string name="sant_francesc_hotel_singular">Sant Francesc Hotel Singular</string>
+    <string name="granada_description">Granada is in Spain’s southern Andalusia region and sits in the foothills of the Sierra Nevada mountains. The city is famous for its stunning medieval architecture which dates back to the Moorish occupation, the most famous example is the Alhambra.
+        The city is also renowned for its electric atmosphere. The streets are packed with tapas bars, restaurants, bohemian cafes, and flamenco clubs. It has one of the biggest student populations in the country, as well as being one of the most visited places, which makes it a truly special place.
+    </string>
+    <string name="granada_hotel_description">Gar-Anat is a glossy, charismatic boutique hotel tucked into a sleekly converted 16th-century building, and inspired by literary greats of Andalucía’s past. It\’s a fabulous find for its warm welcome, creative, individually styled rooms
+        (at reasonable rates), and handily central location.
+    </string>
+    <string name="gran">Granada</string>
+    <string name="gar_anat">Gar-Anat</string>
 </resources>

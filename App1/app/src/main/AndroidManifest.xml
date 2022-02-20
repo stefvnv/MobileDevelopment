@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.app1" >
+    package="com.example.app1">
 
     <application
         android:allowBackup="true"
@@ -8,7 +8,19 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.App1" >
+        android:theme="@style/Theme.App1">
+        <activity
+            android:name=".GranadaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PalmaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SevilleActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MadridActivity"
+            android:exported="false" />
         <activity
             android:name=".OtherActivity"
             android:exported="false" />
@@ -36,7 +48,7 @@
         <activity
             android:name=".MainActivity"
             android:exported="true"
-            android:label="SPANISCAPE" >
+            android:label="SPANISCAPE">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
