@@ -25,7 +25,7 @@
                 android:id="@+id/textView14"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="More places to visit"
+                android:text="@string/more_places_to_visit_spain"
                 android:textSize="24sp"
                 android:textStyle="bold" />
 
@@ -33,7 +33,7 @@
                 android:id="@+id/textView15"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="If you need more options on where to travel to in Spain or you have already seen the most famous cities, we've got you covered! Here are a few suggestions: "
+                android:text="@string/suggestions"
                 android:textSize="16sp" />
 
             <TextView
@@ -41,28 +41,196 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20sp"
-                android:text="@string/our_hotel_recommendation"
-                android:textSize="18sp"
-                android:textStyle="bold" />
+                android:text="@string/tenerife"
+                android:textSize="22sp"
+                android:textStyle="italic" />
+
+            <ImageView
+                android:id="@+id/imgTenerife"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:contentDescription="TODO"
+                android:tag="1"
+                app:srcCompat="@drawable/tenerife" />
+
+            <Button
+                android:id="@+id/btnImgTenerife"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="100sp"
+                android:layout_marginTop="20sp"
+                android:layout_marginRight="100sp"
+                android:layout_marginBottom="20sp"
+                android:backgroundTint="#FF9800"
+                android:text="Hide/Show"
+                app:cornerRadius="20sp" />
 
             <TextView
                 android:id="@+id/textView18"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/bacelona_hotel_description"
+                android:text="@string/tenerife_description"
                 android:textSize="16sp" />
 
             <Button
-                android:id="@+id/btnLocation"
-                android:layout_width="wrap_content"
+                android:id="@+id/btnTenerife"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="100sp"
+                android:layout_marginTop="20sp"
+                android:layout_marginRight="100sp"
+                android:layout_marginBottom="40sp"
+                android:backgroundTint="#FF9800"
+                android:text="Watch Video"
+                app:cornerRadius="20sp" />
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20sp"
-                android:layout_marginRight="10sp"
-                android:layout_weight="1"
+                android:text="@string/alicante"
+                android:textSize="22sp"
+                android:textStyle="italic" />
+
+            <ImageView
+                android:id="@+id/imgAlicante"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:contentDescription="TODO"
+                android:tag="1"
+                app:srcCompat="@drawable/alicante" />
+
+            <Button
+                android:id="@+id/btnImgAlicante"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="100sp"
+                android:layout_marginTop="20sp"
+                android:layout_marginRight="100sp"
+                android:layout_marginBottom="20sp"
                 android:backgroundTint="#FF9800"
-                android:text="Watch video"
-                app:cornerRadius="20sp"
-                tools:ignore="TextContrastCheck" />
+                android:text="Hide/Show"
+                app:cornerRadius="20sp" />
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/alicante_description"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/btnAlicante"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="100sp"
+                android:layout_marginTop="20sp"
+                android:layout_marginRight="100sp"
+                android:layout_marginBottom="40sp"
+                android:backgroundTint="#FF9800"
+                android:text="Watch Video"
+                app:cornerRadius="20sp" />
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20sp"
+                android:text="@string/san_sebastian"
+                android:textSize="22sp"
+                android:textStyle="italic" />
+
+            <ImageView
+                android:id="@+id/imgSebastian"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:contentDescription="TODO"
+                android:tag="1"
+                app:srcCompat="@drawable/sebastian" />
+
+            <Button
+                android:id="@+id/btnImgSebastian"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="100sp"
+                android:layout_marginTop="20sp"
+                android:layout_marginRight="100sp"
+                android:layout_marginBottom="20sp"
+                android:backgroundTint="#FF9800"
+                android:text="Hide/Show"
+                app:cornerRadius="20sp" />
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/sebastian_description"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/btnSebastian"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="100sp"
+                android:layout_marginTop="20sp"
+                android:layout_marginRight="100sp"
+                android:layout_marginBottom="40sp"
+                android:backgroundTint="#FF9800"
+                android:text="Watch Video"
+                app:cornerRadius="20sp" />
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20sp"
+                android:text="@string/cordoba"
+                android:textSize="22sp"
+                android:textStyle="italic" />
+
+            <ImageView
+                android:id="@+id/imgCordoba"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:contentDescription="TODO"
+                android:tag="1"
+                app:srcCompat="@drawable/cordoba" />
+
+            <Button
+                android:id="@+id/btnImgCordoba"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="100sp"
+                android:layout_marginTop="20sp"
+                android:layout_marginRight="100sp"
+                android:layout_marginBottom="20sp"
+                android:backgroundTint="#FF9800"
+                android:text="Hide/Show"
+                app:cornerRadius="20sp" />
+
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/cordoba_description"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/btnCordoba"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="100sp"
+                android:layout_marginTop="20sp"
+                android:layout_marginRight="100sp"
+                android:layout_marginBottom="40sp"
+                android:backgroundTint="#FF9800"
+                android:text="Watch Video"
+                app:cornerRadius="20sp" />
 
         </LinearLayout>
     </ScrollView>

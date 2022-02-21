@@ -10,6 +10,18 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.App1">
         <activity
+            android:name=".CordobaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SebastianActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AlicanteActivity"
+            android:exported="false" />
+        <activity
+            android:name=".TenerifeActivity"
+            android:exported="false" />
+        <activity
             android:name=".GranadaActivity"
             android:exported="false" />
         <activity

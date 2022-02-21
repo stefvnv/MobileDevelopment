@@ -69,4 +69,26 @@
     </string>
     <string name="gran">Granada</string>
     <string name="gar_anat">Gar-Anat</string>
+    <string name="tenerife_description">Tenerife, the largest of the seven Spanish Canary Islands off the west coast of Africa, might bring to mind package holidays and beaches, but there is actually so much more to see here. Away from the coast and the tourist hotspots the landscape is otherworldly,
+        with volcanic peaks – Mount Teide is the highest peak in Spain – where you can explore the craters and ancient lava flows.
+    </string>
+    <string name="alicante_description">Sun, sea and a soaring rocky peak make Alicante a prime coastal destination. Many foreign tourists fly into the airport, then head straight out to resorts further along the coast – but they are missing out, because Alicante is worth exploring in itself. The port city has a lively beach,
+        with Mount Benacantil as a backdrop; Santa Bárbara Castle, dating back to the ninth century, sits at the top. Stroll by the marina in the evening before checking out the tapas bars in the old town.
+    </string>
+    <string name="sebastian_description">This elegant city, on the coast in the Basque Country, is a must for foodies. The pintxo – a Basque version of tapas that usually includes delicious morsels balanced on crusty bread – is the local gastronomic calling card, and the bars of the Old Town lay theirs out on the bar tops so
+        you can see everything on offer. Concha Beach is a beautiful, shell-shaped cove popular with families, while the nearby Zurriola Beach is great for surfing.
+    </string>
+    <string name="cordoba_description">Cordoba was the most important city during the Moorish rule of Spain in the Middle Ages, and it was home to the Mezquita, the vast Islamic mosque built from the eighth to the 10th centuries. After the Reconquista in the 13th century, part of the mosque, rather than being demolished,
+        was converted into a cathedral, but much of it retains the original Islamic design. Cordoba Old Town, a Unesco World Heritage Site, is home to a Roman bridge, charming cobbled streets and some fascinating pieces of architecture..
+    </string>
+    <string name="valencia_description">Where better than the birthplace of paella to sample the most famous dish to come from Spain? Head to a beach-side restaurant for lunch – Spaniards tend not to eat paella at dinner as it’s quite a heavy meal – and wash it down with agua de Valencia, a potent cava-based cocktail.
+        Explore Valencia old town and don\’t miss the incredible, spaceship-like Valencia City of Arts and Sciences. it’s a futuristic complex in what was a riverbed that holds an aquarium, Imax cinema, opera house and science museum.
+    </string>
+    <string name="tenerife">Tenerife</string>
+    <string name="more_places_to_visit">More places to visit</string>
+    <string name="suggestions">If you need more options on where to travel to in Spain or you have already seen the most famous cities, we\'ve got you covered! Here are a few suggestions:</string>
+    <string name="alicante">Alicante</string>
+    <string name="more_places_to_visit_spain">More places to visit in Spain</string>
+    <string name="san_sebastian">San Sebastian</string>
+    <string name="cordoba">Cordoba</string>
 </resources>

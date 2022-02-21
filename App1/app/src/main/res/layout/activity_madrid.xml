@@ -35,7 +35,7 @@
                 android:backgroundTint="#00FFFFFF"
                 android:contentDescription="@string/arrow"
                 android:onClick="goLeftVector"
-                app:srcCompat="@drawable/ic_baseline_chevron_left_24"
+                app:srcCompat="@drawable/left"
                 tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
 
             <ImageButton
