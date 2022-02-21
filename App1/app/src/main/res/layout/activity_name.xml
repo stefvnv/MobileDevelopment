@@ -40,7 +40,7 @@
         android:autofillHints=""
         android:ems="10"
         android:gravity="center"
-        android:hint="@string/type_name"
+        android:hint="@string/enter_name"
         android:inputType="textPersonName"
         android:minHeight="48dp"
         android:textSize="20sp"

@@ -11,56 +11,68 @@
         android:theme="@style/Theme.App1">
         <activity
             android:name=".CordobaActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:label="Spaniscape" />
         <activity
             android:name=".SebastianActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:label="Spaniscape" />
         <activity
             android:name=".AlicanteActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:label="Spaniscape" />
         <activity
             android:name=".TenerifeActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:label="Spaniscape" />
         <activity
             android:name=".GranadaActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:label="Spaniscape" />
         <activity
             android:name=".PalmaActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:label="Spaniscape" />
         <activity
             android:name=".SevilleActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:label="Spaniscape" />
         <activity
             android:name=".MadridActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:label="Spaniscape" />
         <activity
             android:name=".OtherActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:label="Spaniscape" />
         <activity
             android:name=".BarcelonaActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:label="Spaniscape" />
         <activity
             android:name=".LearnActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:label="Spaniscape" />
         <activity
             android:name=".AboutActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:label="Spaniscape" />
         <activity
             android:name=".GreetingsActivity"
             android:exported="false"
-            android:label="Greetings" />
+            android:label="Spaniscape" />
         <activity
             android:name=".MenuActivity"
             android:exported="false"
-            android:label="SPANISCAPE" />
+            android:label="Spaniscape" />
         <activity
             android:name=".NameActivity"
             android:exported="false"
-            android:label="SPANISCAPE" />
+            android:label="Spaniscape" />
         <activity
             android:name=".MainActivity"
             android:exported="true"
-            android:label="SPANISCAPE">
+            android:label="Spaniscape">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

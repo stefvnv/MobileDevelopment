@@ -91,4 +91,37 @@
     <string name="more_places_to_visit_spain">More places to visit in Spain</string>
     <string name="san_sebastian">San Sebastian</string>
     <string name="cordoba">Cordoba</string>
+    <string name="tengo_20_a_os">Tengo 20 años</string>
+    <string name="good_afternoon">Good afternoon</string>
+    <string name="c_mo_est_s">¿Cómo estás?</string>
+    <string name="see_you_later">See you later</string>
+    <string name="buenas_noches">Buenas noches</string>
+    <string name="good_evening_night">Good evening/night</string>
+    <string name="buenas_tardes">Buenas tardes</string>
+    <string name="c_mo_te_llamas">¿Cómo te llamas?</string>
+    <string name="goodbye">Goodbye</string>
+    <string name="buenos_d_as">Buenos días</string>
+    <string name="greetings_saludos">Greetings/Saludos</string>
+    <string name="i_m_pleased_to_meet_you">I\'m pleased to meet you</string>
+    <string name="good_morning">Good morning</string>
+    <string name="hola">Hola</string>
+    <string name="hasta_luego">Hasta luego</string>
+    <string name="cu_ntos_a_os_tienes">¿Cuántos años tienes?</string>
+    <string name="adi_s">Adiós</string>
+    <string name="encantado_de_conocerte">Encantado de conocerte</string>
+    <string name="my_name_is">My name is…</string>
+    <string name="me_llamo">Me llamo…</string>
+    <string name="what_s_your_name">What\'s your name?</string>
+    <string name="i_am_20_years_old">I am 20 years old</string>
+    <string name="hello">Hello</string>
+
+    <string name="play">play</string>
+    <string name="how_old_are_you">How old are you?</string>
+    <string name="bien">Bien</string>
+
+    <string name="good">Good</string>
+    <string name="how_are_you">How are you?</string>
+    <string name="todo" tools:ignore="DuplicateDefinition">TODO</string>
+    <string name="enter_name">Enter name</string>
+
 </resources>

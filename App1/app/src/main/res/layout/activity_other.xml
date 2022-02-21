@@ -63,8 +63,10 @@
                 android:layout_marginRight="100sp"
                 android:layout_marginBottom="20sp"
                 android:backgroundTint="#FF9800"
+                android:tag="1"
                 android:text="Hide/Show"
-                app:cornerRadius="20sp" />
+                app:cornerRadius="20sp"
+                tools:ignore="TextContrastCheck" />
 
             <TextView
                 android:id="@+id/textView18"
@@ -83,7 +85,8 @@
                 android:layout_marginBottom="40sp"
                 android:backgroundTint="#FF9800"
                 android:text="Watch Video"
-                app:cornerRadius="20sp" />
+                app:cornerRadius="20sp"
+                tools:ignore="TextContrastCheck" />
 
             <TextView
                 android:id="@+id/textView7"
