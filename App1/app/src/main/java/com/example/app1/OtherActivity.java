@@ -10,8 +10,6 @@ import android.widget.ImageView;
 
 public class OtherActivity extends AppCompatActivity {
 
-    //private ImageView androidIcon;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -22,8 +20,10 @@ public class OtherActivity extends AppCompatActivity {
         Button btnAlicante = findViewById(R.id.btnAlicante);
         Button btnSebastian = findViewById(R.id.btnSebastian);
         Button btnCordoba = findViewById(R.id.btnCordoba);
-
         Button btnImgTenerife = findViewById(R.id.btnImgTenerife);
+        Button btnImgAlicante = findViewById(R.id.btnImgAlicante);
+        Button btnImgSebastian = findViewById(R.id.btnImgSebastian);
+        Button btnImgCordoba = findViewById(R.id.btnImgCordoba);
 
 
         //Videos
@@ -50,34 +50,59 @@ public class OtherActivity extends AppCompatActivity {
 
         //Visibility
         btnImgTenerife.setOnClickListener(new View.OnClickListener() {
-            ImageView imageView = findViewById(R.id.imgTenerife);
-            String resource = (String) imageView.getTag();
+            final ImageView imageView = findViewById(R.id.imgTenerife);
 
             @Override
             public void onClick(View view) {
-                if (resource.equalsIgnoreCase("1")) {
+
+                if (imageView.getVisibility() == View.VISIBLE) {
                     imageView.setVisibility(View.GONE);
-                    imageView.setTag("2");
-                } else if (resource.equalsIgnoreCase("2")) {
+                } else if (imageView.getVisibility() == View.GONE) {
                     imageView.setVisibility(View.VISIBLE);
-                    imageView.setTag("1");
+                }
+            }
+        });
+
+        btnImgAlicante.setOnClickListener(new View.OnClickListener() {
+            final ImageView imageView = findViewById(R.id.imgAlicante);
+
+            @Override
+            public void onClick(View view) {
+
+                if (imageView.getVisibility() == View.VISIBLE) {
+                    imageView.setVisibility(View.GONE);
+                } else if (imageView.getVisibility() == View.GONE) {
+                    imageView.setVisibility(View.VISIBLE);
+                }
+            }
+        });
+
+        btnImgSebastian.setOnClickListener(new View.OnClickListener() {
+            final ImageView imageView = findViewById(R.id.imgSebastian);
+
+            @Override
+            public void onClick(View view) {
+
+                if (imageView.getVisibility() == View.VISIBLE) {
+                    imageView.setVisibility(View.GONE);
+                } else if (imageView.getVisibility() == View.GONE) {
+                    imageView.setVisibility(View.VISIBLE);
+                }
+            }
+        });
+
+        btnImgCordoba.setOnClickListener(new View.OnClickListener() {
+            final ImageView imageView = findViewById(R.id.imgCordoba);
+
+            @Override
+            public void onClick(View view) {
+
+                if (imageView.getVisibility() == View.VISIBLE) {
+                    imageView.setVisibility(View.GONE);
+                } else if (imageView.getVisibility() == View.GONE) {
+                    imageView.setVisibility(View.VISIBLE);
                 }
             }
         });
     }
-
-    //Visibility
-    /**
-     public void goHide(View v) {
-     androidIcon = findViewById(R.id.imgTenerife);
-     androidIcon.setVisibility(View.GONE);
-     //  androidIcon.setVisibility(View.INVISIBLE);
-     }
-
-     public void goShow(View v) {
-     androidIcon = findViewById(R.id.imgTenerife);
-     androidIcon.setVisibility(View.VISIBLE);
-     }
-     **/
-
 }

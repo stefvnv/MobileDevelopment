@@ -34,7 +34,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/suggestions"
-                android:textSize="16sp" />
+                android:textSize="16sp"
+                tools:ignore="TextContrastCheck" />
 
             <TextView
                 android:id="@+id/textView16"
@@ -50,7 +51,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:adjustViewBounds="true"
-                android:contentDescription="TODO"
+                android:contentDescription="@string/todo"
                 android:tag="1"
                 app:srcCompat="@drawable/tenerife" />
 
@@ -64,7 +65,7 @@
                 android:layout_marginBottom="20sp"
                 android:backgroundTint="#FF9800"
                 android:tag="1"
-                android:text="Hide/Show"
+                android:text="@string/hide_show"
                 app:cornerRadius="20sp"
                 tools:ignore="TextContrastCheck" />
 
@@ -84,9 +85,9 @@
                 android:layout_marginRight="100sp"
                 android:layout_marginBottom="40sp"
                 android:backgroundTint="#FF9800"
-                android:text="Watch Video"
+                android:text="@string/watch_video"
                 app:cornerRadius="20sp"
-                tools:ignore="TextContrastCheck" />
+                tools:ignore="TextContrastCheck,DuplicateSpeakableTextCheck,DuplicateSpeakableTextCheck" />
 
             <TextView
                 android:id="@+id/textView7"
@@ -102,7 +103,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:adjustViewBounds="true"
-                android:contentDescription="TODO"
+                android:contentDescription="@string/todo"
                 android:tag="1"
                 app:srcCompat="@drawable/alicante" />
 
@@ -115,7 +116,7 @@
                 android:layout_marginRight="100sp"
                 android:layout_marginBottom="20sp"
                 android:backgroundTint="#FF9800"
-                android:text="Hide/Show"
+                android:text="@string/hide_show"
                 app:cornerRadius="20sp" />
 
             <TextView
@@ -134,7 +135,7 @@
                 android:layout_marginRight="100sp"
                 android:layout_marginBottom="40sp"
                 android:backgroundTint="#FF9800"
-                android:text="Watch Video"
+                android:text="@string/watch_video"
                 app:cornerRadius="20sp" />
 
             <TextView
@@ -151,7 +152,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:adjustViewBounds="true"
-                android:contentDescription="TODO"
+                android:contentDescription="@string/todo"
                 android:tag="1"
                 app:srcCompat="@drawable/sebastian" />
 
@@ -164,7 +165,7 @@
                 android:layout_marginRight="100sp"
                 android:layout_marginBottom="20sp"
                 android:backgroundTint="#FF9800"
-                android:text="Hide/Show"
+                android:text="@string/hide_show"
                 app:cornerRadius="20sp" />
 
             <TextView
@@ -183,7 +184,7 @@
                 android:layout_marginRight="100sp"
                 android:layout_marginBottom="40sp"
                 android:backgroundTint="#FF9800"
-                android:text="Watch Video"
+                android:text="@string/watch_video"
                 app:cornerRadius="20sp" />
 
             <TextView
@@ -200,7 +201,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:adjustViewBounds="true"
-                android:contentDescription="TODO"
+                android:contentDescription="@string/todo"
                 android:tag="1"
                 app:srcCompat="@drawable/cordoba" />
 
@@ -213,7 +214,7 @@
                 android:layout_marginRight="100sp"
                 android:layout_marginBottom="20sp"
                 android:backgroundTint="#FF9800"
-                android:text="Hide/Show"
+                android:text="@string/hide_show"
                 app:cornerRadius="20sp" />
 
             <TextView
@@ -232,7 +233,7 @@
                 android:layout_marginRight="100sp"
                 android:layout_marginBottom="40sp"
                 android:backgroundTint="#FF9800"
-                android:text="Watch Video"
+                android:text="@string/watch_video"
                 app:cornerRadius="20sp" />
 
         </LinearLayout>

@@ -123,5 +123,6 @@
     <string name="how_are_you">How are you?</string>
     <string name="todo" tools:ignore="DuplicateDefinition">TODO</string>
     <string name="enter_name">Enter name</string>
-
+    <string name="watch_video" tools:ignore="DuplicateDefinition">Watch Video</string>
+    <string name="hide_show" tools:ignore="DuplicateDefinition">Hide/Show</string>
 </resources>
