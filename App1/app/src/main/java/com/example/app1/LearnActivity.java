@@ -10,12 +10,16 @@ import android.widget.ListView;
 
 public class LearnActivity extends ListActivity {
     String[] myList = {
-            "GreetingsActivity"
+            "GreetingsActivity",
+            "ConversationActivity",
+            "DetailsActivity"
     };
 
 
     String[] myLabels = {
-            "Greetings"
+            "Greetings",
+            "General Conversation",
+            "Personal Details"
     };
 
 

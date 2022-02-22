@@ -144,12 +144,11 @@
     <string name="do_you_speak_english">Do you speak English?</string>
     <string name="i_like_it">I like it</string>
     <string name="i_m_sorry">I\'m sorry</string>
-    <string name="no">No</string>
+    <string name="no" tools:ignore="DuplicateDefinition">No</string>
     <string name="i_don_t_know">I don\'t know</string>
     <string name="no_s">No sé</string>
     <string name="no_hablo_espa_ol">No hablo español</string>
     <string name="please">Please</string>
     <string name="thank_you">Thank you</string>
-    <string name="no">No</string>
     <string name="general_conversation">General Conversation</string>
 </resources>

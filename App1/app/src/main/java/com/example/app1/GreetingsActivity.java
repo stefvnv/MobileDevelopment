@@ -101,5 +101,4 @@ public class GreetingsActivity extends AppCompatActivity {
         Intent i = new Intent(GreetingsActivity.this, ConversationActivity.class);
         startActivity(i);
     }
-
 }

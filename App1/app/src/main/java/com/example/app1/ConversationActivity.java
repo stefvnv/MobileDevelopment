@@ -16,45 +16,45 @@ public class ConversationActivity extends AppCompatActivity {
         setContentView(R.layout.activity_greetings);
 
         //Sounds
-        ImageButton imgHello = findViewById(R.id.imgHello);
-        imgHello.setOnClickListener(View -> {
-            MediaPlayer mp = MediaPlayer.create(ConversationActivity.this, R.raw.hola);
+        ImageButton imgYes = findViewById(R.id.imgYes);
+        imgYes.setOnClickListener(View -> {
+            MediaPlayer mp = MediaPlayer.create(ConversationActivity.this, R.raw.yes);
             mp.start();
         });
 
-        ImageButton imgGoodMorning = findViewById(R.id.imgGoodMorning);
-        imgGoodMorning.setOnClickListener(View -> {
-            MediaPlayer mp = MediaPlayer.create(ConversationActivity.this, R.raw.goodmorning);
+        ImageButton imgNo = findViewById(R.id.imgNo);
+        imgNo.setOnClickListener(View -> {
+            MediaPlayer mp = MediaPlayer.create(ConversationActivity.this, R.raw.no);
             mp.start();
         });
 
-        ImageButton imgGoodAfternoon = findViewById(R.id.imgGoodAfternoon);
-        imgGoodAfternoon.setOnClickListener(View -> {
-            MediaPlayer mp = MediaPlayer.create(ConversationActivity.this, R.raw.goodafternoon);
+        ImageButton imgPlease = findViewById(R.id.imgPlease);
+        imgPlease.setOnClickListener(View -> {
+            MediaPlayer mp = MediaPlayer.create(ConversationActivity.this, R.raw.please);
             mp.start();
         });
 
-        ImageButton imgGoodnight = findViewById(R.id.imgGoodNight);
-        imgGoodnight.setOnClickListener(View -> {
-            MediaPlayer mp = MediaPlayer.create(ConversationActivity.this, R.raw.goodnight);
+        ImageButton imgThanks = findViewById(R.id.imgThanks);
+        imgThanks.setOnClickListener(View -> {
+            MediaPlayer mp = MediaPlayer.create(ConversationActivity.this, R.raw.thanks);
             mp.start();
         });
 
-        ImageButton imgHowAreYou = findViewById(R.id.imgHowAreYou);
-        imgHowAreYou.setOnClickListener(View -> {
-            MediaPlayer mp = MediaPlayer.create(ConversationActivity.this, R.raw.howareyou);
+        ImageButton imgExcuseMe = findViewById(R.id.imgExcuseMe);
+        imgExcuseMe.setOnClickListener(View -> {
+            MediaPlayer mp = MediaPlayer.create(ConversationActivity.this, R.raw.excuseme);
             mp.start();
         });
 
-        ImageButton imgGood = findViewById(R.id.imgGood);
-        imgGood.setOnClickListener(View -> {
-            MediaPlayer mp = MediaPlayer.create(ConversationActivity.this, R.raw.good);
+        ImageButton imgIdk = findViewById(R.id.imgIdk);
+        imgIdk.setOnClickListener(View -> {
+            MediaPlayer mp = MediaPlayer.create(ConversationActivity.this, R.raw.idk);
             mp.start();
         });
 
-        ImageButton imgWhatsYourName = findViewById(R.id.imgWhatsYourName);
-        imgWhatsYourName.setOnClickListener(View -> {
-            MediaPlayer mp = MediaPlayer.create(ConversationActivity.this, R.raw.whatsyourname);
+        ImageButton imgIunderstand = findViewById(R.id.imgIunderstand);
+        imgIunderstand.setOnClickListener(View -> {
+            MediaPlayer mp = MediaPlayer.create(ConversationActivity.this, R.raw.iunderstand);
             mp.start();
         });
 
@@ -64,33 +64,33 @@ public class ConversationActivity extends AppCompatActivity {
             mp.start();
         });
 
-        ImageButton imgPleased = findViewById(R.id.imgPleased);
-        imgPleased.setOnClickListener(View -> {
-            MediaPlayer mp = MediaPlayer.create(ConversationActivity.this, R.raw.pleased);
+        ImageButton imgImsorry = findViewById(R.id.imgImsorry);
+        imgImsorry.setOnClickListener(View -> {
+            MediaPlayer mp = MediaPlayer.create(ConversationActivity.this, R.raw.sorry);
             mp.start();
         });
 
-        ImageButton imgHowOldAreYou = findViewById(R.id.imgHowOldAreYou);
-        imgHowOldAreYou.setOnClickListener(View -> {
-            MediaPlayer mp = MediaPlayer.create(ConversationActivity.this, R.raw.howold);
+        ImageButton imgIlikeIt = findViewById(R.id.imgIlikeIt);
+        imgIlikeIt.setOnClickListener(View -> {
+            MediaPlayer mp = MediaPlayer.create(ConversationActivity.this, R.raw.ilikeit);
             mp.start();
         });
 
-        ImageButton imgIamYearsOld = findViewById(R.id.imgIamYearsOld);
-        imgIamYearsOld.setOnClickListener(View -> {
-            MediaPlayer mp = MediaPlayer.create(ConversationActivity.this, R.raw.iamyearsold);
+        ImageButton imgDontSpeakSpanish = findViewById(R.id.imgDontSpeakSpanish);
+        imgDontSpeakSpanish.setOnClickListener(View -> {
+            MediaPlayer mp = MediaPlayer.create(ConversationActivity.this, R.raw.dontspeakspanish);
             mp.start();
         });
 
-        ImageButton imgSeeYouLater = findViewById(R.id.imgSeeYouLater);
-        imgSeeYouLater.setOnClickListener(View -> {
-            MediaPlayer mp = MediaPlayer.create(ConversationActivity.this, R.raw.seeyou);
+        ImageButton imgDoYouSpeakEnglish = findViewById(R.id.imgDoYouSpeakEnglish);
+        imgDoYouSpeakEnglish.setOnClickListener(View -> {
+            MediaPlayer mp = MediaPlayer.create(ConversationActivity.this, R.raw.speakenglish);
             mp.start();
         });
 
-        ImageButton imgGoodbye = findViewById(R.id.imgGoodbye);
-        imgGoodbye.setOnClickListener(View -> {
-            MediaPlayer mp = MediaPlayer.create(ConversationActivity.this, R.raw.goodbye);
+        ImageButton imgHelp = findViewById(R.id.imgHelp);
+        imgHelp.setOnClickListener(View -> {
+            MediaPlayer mp = MediaPlayer.create(ConversationActivity.this, R.raw.help);
             mp.start();
         });
     }
@@ -102,7 +102,7 @@ public class ConversationActivity extends AppCompatActivity {
     }
 
     public void goNextActivity(View view) {
-        Intent i = new Intent(ConversationActivity.this, ConversationActivity.class);
+        Intent i = new Intent(ConversationActivity.this, DetailsActivity.class);
         startActivity(i);
     }
 }
