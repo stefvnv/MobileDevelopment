@@ -12,16 +12,16 @@ public class LearnActivity extends ListActivity {
     String[] myList = {
             "GreetingsActivity",
             "ConversationActivity",
-            "DetailsActivity"
+            "DetailsActivity",
+            "ColoursActivity"
     };
-
 
     String[] myLabels = {
             "Greetings",
             "General Conversation",
-            "Personal Details"
+            "Personal Details",
+            "Colours"
     };
-
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -31,11 +31,8 @@ public class LearnActivity extends ListActivity {
         this.setListAdapter(new ArrayAdapter<String>(LearnActivity.this, android.R.layout.simple_list_item_1, myLabels));
     }
 
-
     @Override
     protected void onListItemClick(ListView l, View v, int position, long id) {
-
-
         try {
             Class myClass = Class.forName("com.example.app1." + myList[position]);
             Intent i = new Intent(LearnActivity.this, myClass);
@@ -45,5 +42,4 @@ public class LearnActivity extends ListActivity {
             e.printStackTrace();
         }
     }
-
 }

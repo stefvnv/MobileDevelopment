@@ -13,7 +13,7 @@ public class ConversationActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_greetings);
+        setContentView(R.layout.activity_conversation);
 
         //Sounds
         ImageButton imgYes = findViewById(R.id.imgYes);
@@ -52,15 +52,15 @@ public class ConversationActivity extends AppCompatActivity {
             mp.start();
         });
 
-        ImageButton imgIunderstand = findViewById(R.id.imgIunderstand);
-        imgIunderstand.setOnClickListener(View -> {
-            MediaPlayer mp = MediaPlayer.create(ConversationActivity.this, R.raw.iunderstand);
+        ImageButton imgYoureWelcome = findViewById(R.id.imgYoureWelcome);
+        imgYoureWelcome.setOnClickListener(View -> {
+            MediaPlayer mp = MediaPlayer.create(ConversationActivity.this, R.raw.yourewelcome);
             mp.start();
         });
 
-        ImageButton imgMyName = findViewById(R.id.imgMyName);
-        imgMyName.setOnClickListener(View -> {
-            MediaPlayer mp = MediaPlayer.create(ConversationActivity.this, R.raw.mynameis);
+        ImageButton imgIunderstand = findViewById(R.id.imgIunderstand);
+        imgIunderstand.setOnClickListener(View -> {
+            MediaPlayer mp = MediaPlayer.create(ConversationActivity.this, R.raw.iunderstand);
             mp.start();
         });
 

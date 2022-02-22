@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.App1">
         <activity
+            android:name=".TimeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ColoursActivity"
+            android:exported="false" />
+        <activity
             android:name=".DetailsActivity"
             android:exported="false" />
         <activity
