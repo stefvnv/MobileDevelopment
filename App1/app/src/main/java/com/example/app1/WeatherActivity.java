@@ -13,96 +13,90 @@ public class WeatherActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_time);
+        setContentView(R.layout.activity_weather);
 
         //Sounds
-        ImageButton imgClock = findViewById(R.id.imgClock);
-        imgClock.setOnClickListener(View -> {
-            MediaPlayer mp = MediaPlayer.create(WeatherActivity.this, R.raw.clock);
+        ImageButton imgTemperature = findViewById(R.id.imgTemperature);
+        imgTemperature.setOnClickListener(View -> {
+            MediaPlayer mp = MediaPlayer.create(WeatherActivity.this, R.raw.temperature);
             mp.start();
         });
 
-        ImageButton imgHour = findViewById(R.id.imgHour);
-        imgHour.setOnClickListener(View -> {
-            MediaPlayer mp = MediaPlayer.create(WeatherActivity.this, R.raw.hour);
+        ImageButton imgWeatherToday = findViewById(R.id.imgWeatherToday);
+        imgWeatherToday.setOnClickListener(View -> {
+            MediaPlayer mp = MediaPlayer.create(WeatherActivity.this, R.raw.weathertoday);
             mp.start();
         });
 
-        ImageButton imgMinute = findViewById(R.id.imgMinute);
-        imgMinute.setOnClickListener(View -> {
-            MediaPlayer mp = MediaPlayer.create(WeatherActivity.this, R.raw.minute);
+        ImageButton imgWeatherTomorrow = findViewById(R.id.imgWeatherTomorrow);
+        imgWeatherTomorrow.setOnClickListener(View -> {
+            MediaPlayer mp = MediaPlayer.create(WeatherActivity.this, R.raw.weathertomorrow);
             mp.start();
         });
 
-        ImageButton imgSecond = findViewById(R.id.imgSecond);
-        imgSecond.setOnClickListener(View -> {
-            MediaPlayer mp = MediaPlayer.create(WeatherActivity.this, R.raw.second);
+        ImageButton imgStorm = findViewById(R.id.imgStorm);
+        imgStorm.setOnClickListener(View -> {
+            MediaPlayer mp = MediaPlayer.create(WeatherActivity.this, R.raw.storm);
             mp.start();
         });
 
-        ImageButton imgHalf = findViewById(R.id.imgHalf);
-        imgHalf.setOnClickListener(View -> {
-            MediaPlayer mp = MediaPlayer.create(WeatherActivity.this, R.raw.half);
+        ImageButton imgHot = findViewById(R.id.imgHot);
+        imgHot.setOnClickListener(View -> {
+            MediaPlayer mp = MediaPlayer.create(WeatherActivity.this, R.raw.hot);
             mp.start();
         });
 
-        ImageButton imgQuarter = findViewById(R.id.imgQuarter);
-        imgQuarter.setOnClickListener(View -> {
-            MediaPlayer mp = MediaPlayer.create(WeatherActivity.this, R.raw.quarter);
+        ImageButton imgCold = findViewById(R.id.imgCold);
+        imgCold.setOnClickListener(View -> {
+            MediaPlayer mp = MediaPlayer.create(WeatherActivity.this, R.raw.cold);
             mp.start();
         });
 
-        ImageButton imgMonday = findViewById(R.id.imgMonday);
-        imgMonday.setOnClickListener(View -> {
-            MediaPlayer mp = MediaPlayer.create(WeatherActivity.this, R.raw.monday);
+        ImageButton imgSunny = findViewById(R.id.imgSunny);
+        imgSunny.setOnClickListener(View -> {
+            MediaPlayer mp = MediaPlayer.create(WeatherActivity.this, R.raw.sunny);
             mp.start();
         });
 
-        ImageButton imgTuesday = findViewById(R.id.imgTuesday);
-        imgTuesday.setOnClickListener(View -> {
-            MediaPlayer mp = MediaPlayer.create(WeatherActivity.this, R.raw.tuesday);
+        ImageButton imgRaining = findViewById(R.id.imgRaining);
+        imgRaining.setOnClickListener(View -> {
+            MediaPlayer mp = MediaPlayer.create(WeatherActivity.this, R.raw.raining);
             mp.start();
         });
 
-        ImageButton imgWednesday = findViewById(R.id.imgWednesday);
-        imgWednesday.setOnClickListener(View -> {
-            MediaPlayer mp = MediaPlayer.create(WeatherActivity.this, R.raw.wednesday);
+        ImageButton imgSnowing = findViewById(R.id.imgSnowing);
+        imgSnowing.setOnClickListener(View -> {
+            MediaPlayer mp = MediaPlayer.create(WeatherActivity.this, R.raw.snowing);
             mp.start();
         });
 
-        ImageButton imgThursday = findViewById(R.id.imgThursday);
-        imgThursday.setOnClickListener(View -> {
-            MediaPlayer mp = MediaPlayer.create(WeatherActivity.this, R.raw.thursday);
+        ImageButton imgWindy = findViewById(R.id.imgWindy);
+        imgWindy.setOnClickListener(View -> {
+            MediaPlayer mp = MediaPlayer.create(WeatherActivity.this, R.raw.windy);
             mp.start();
         });
 
-        ImageButton imgFriday = findViewById(R.id.imgFriday);
-        imgFriday.setOnClickListener(View -> {
-            MediaPlayer mp = MediaPlayer.create(WeatherActivity.this, R.raw.friday);
+        ImageButton imgCloudy = findViewById(R.id.imgCloudy);
+        imgCloudy.setOnClickListener(View -> {
+            MediaPlayer mp = MediaPlayer.create(WeatherActivity.this, R.raw.cloudy);
             mp.start();
         });
 
-        ImageButton imgSaturday = findViewById(R.id.imgSaturday);
-        imgSaturday.setOnClickListener(View -> {
-            MediaPlayer mp = MediaPlayer.create(WeatherActivity.this, R.raw.saturday);
-            mp.start();
-        });
-
-        ImageButton imgSunday = findViewById(R.id.imgSunday);
-        imgSunday.setOnClickListener(View -> {
-            MediaPlayer mp = MediaPlayer.create(WeatherActivity.this, R.raw.sunday);
+        ImageButton imgFoggy = findViewById(R.id.imgFoggy);
+        imgFoggy.setOnClickListener(View -> {
+            MediaPlayer mp = MediaPlayer.create(WeatherActivity.this, R.raw.foggy);
             mp.start();
         });
     }
 
     //Easy Button Click
     public void goPreviousActivity(View view) {
-        Intent i = new Intent(WeatherActivity.this, ColoursActivity.class);
+        Intent i = new Intent(WeatherActivity.this, TimeActivity.class);
         startActivity(i);
     }
 
     public void goNextActivity(View view) {
-        Intent i = new Intent(WeatherActivity.this, WeatherActivity.class);
+        Intent i = new Intent(WeatherActivity.this, DirectionsActivity.class);
         startActivity(i);
     }
 }

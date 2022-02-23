@@ -3,18 +3,18 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     android:background="@drawable/ombre"
     android:orientation="vertical"
     android:weightSum="100"
-    tools:context=".WeatherActivity">
+    tools:context=".InformationActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="10sp"
         android:layout_weight="10"
-        android:background="#E88BC34A"
+        android:background="#BFFFEB3B"
         android:gravity="center"
         android:orientation="horizontal"
         android:scaleType="fitXY">
@@ -27,7 +27,7 @@
             android:backgroundTint="#00FFFFFF"
             android:contentDescription="@string/todo"
             android:foregroundTint="#FFFFFF"
-            app:srcCompat="@android:drawable/ic_menu_mapmode"
+            app:srcCompat="@android:drawable/stat_sys_warning"
             tools:ignore="DuplicateSpeakableTextCheck,ImageContrastCheck" />
 
         <TextView
@@ -35,17 +35,16 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="95"
-            android:text="@string/weather_clima"
+            android:text="Information Signs"
             android:textColor="#F8F8F8"
-            android:textSize="22sp"
-            android:textStyle="bold"
-            tools:ignore="TextContrastCheck" />
+            android:textSize="24sp"
+            android:textStyle="bold" />
 
     </LinearLayout>
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:layout_marginBottom="10sp"
         android:layout_weight="80">
 
@@ -70,7 +69,7 @@
                     android:layout_gravity="center"
                     android:layout_weight="45"
                     android:gravity="start"
-                    android:text="@string/temperature"
+                    android:text="@string/hello"
                     android:textSize="20sp"
                     android:textStyle="italic" />
 
@@ -81,11 +80,11 @@
                     android:layout_gravity="center"
                     android:layout_weight="50"
                     android:gravity="end"
-                    android:text="@string/temperatura"
+                    android:text="@string/hola"
                     android:textSize="20sp" />
 
                 <ImageButton
-                    android:id="@+id/imgTemperature"
+                    android:id="@+id/imgHello"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="5"
@@ -110,7 +109,7 @@
                     android:layout_gravity="center"
                     android:layout_weight="45"
                     android:gravity="start"
-                    android:text="@string/what_s_the_weather_like_today"
+                    android:text="@string/good_morning"
                     android:textSize="20sp"
                     android:textStyle="italic" />
 
@@ -121,11 +120,11 @@
                     android:layout_gravity="center"
                     android:layout_weight="50"
                     android:gravity="end"
-                    android:text="@string/qu_tiempo_hace_hoy"
+                    android:text="@string/buenos_d_as"
                     android:textSize="20sp" />
 
                 <ImageButton
-                    android:id="@+id/imgWeatherToday"
+                    android:id="@+id/imgGoodMorning"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="5"
@@ -150,7 +149,7 @@
                     android:layout_gravity="center"
                     android:layout_weight="45"
                     android:gravity="start"
-                    android:text="@string/what_s_the_weather_like_tomorrow"
+                    android:text="@string/good_afternoon"
                     android:textSize="20sp"
                     android:textStyle="italic" />
 
@@ -161,11 +160,11 @@
                     android:layout_gravity="center"
                     android:layout_weight="50"
                     android:gravity="end"
-                    android:text="@string/qu_tiempo_har_ma_ana"
+                    android:text="@string/buenas_tardes"
                     android:textSize="20sp" />
 
                 <ImageButton
-                    android:id="@+id/imgWeatherTomorrow"
+                    android:id="@+id/imgGoodAfternoon"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="5"
@@ -173,47 +172,6 @@
                     android:contentDescription="@string/todo"
                     app:srcCompat="@drawable/play"
                     tools:ignore="TouchTargetSizeCheck,DuplicateSpeakableTextCheck" />
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginTop="10sp"
-                android:layout_marginBottom="10sp"
-                android:layout_weight="45"
-                android:orientation="horizontal">
-
-                <TextView
-                    android:id="@+id/textView40"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_weight="45"
-                    android:gravity="start"
-                    android:text="@string/a_storm_is_coming"
-                    android:textSize="20sp"
-                    android:textStyle="italic" />
-
-                <TextView
-                    android:id="@+id/textView41"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_weight="50"
-                    android:gravity="end"
-                    android:text="@string/se_acerca_una_tormenta"
-                    android:textSize="20sp" />
-
-                <ImageButton
-                    android:id="@+id/imgStorm"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="5"
-                    android:backgroundTint="#00FFFFFF"
-                    android:contentDescription="@string/todo"
-                    app:srcCompat="@drawable/play"
-                    tools:ignore="TouchTargetSizeCheck" />
 
             </LinearLayout>
 
@@ -231,7 +189,7 @@
                     android:layout_gravity="center"
                     android:layout_weight="45"
                     android:gravity="start"
-                    android:text="@string/it_s_hot"
+                    android:text="@string/good_evening_night"
                     android:textSize="20sp"
                     android:textStyle="italic" />
 
@@ -242,11 +200,11 @@
                     android:layout_gravity="center"
                     android:layout_weight="50"
                     android:gravity="end"
-                    android:text="@string/hace_calor"
+                    android:text="@string/buenas_noches"
                     android:textSize="20sp" />
 
                 <ImageButton
-                    android:id="@+id/imgHot"
+                    android:id="@+id/imgGoodNight"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="5"
@@ -271,7 +229,7 @@
                     android:layout_gravity="center"
                     android:layout_weight="45"
                     android:gravity="start"
-                    android:text="@string/it_s_cold"
+                    android:text="@string/how_are_you"
                     android:textSize="20sp"
                     android:textStyle="italic" />
 
@@ -282,11 +240,11 @@
                     android:layout_gravity="center"
                     android:layout_weight="50"
                     android:gravity="center|end"
-                    android:text="@string/hace_fr_o"
+                    android:text="@string/c_mo_est_s"
                     android:textSize="20sp" />
 
                 <ImageButton
-                    android:id="@+id/imgCold"
+                    android:id="@+id/imgHowAreYou"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="5"
@@ -311,7 +269,7 @@
                     android:layout_gravity="center"
                     android:layout_weight="45"
                     android:gravity="start"
-                    android:text="@string/it_s_sunny"
+                    android:text="@string/good"
                     android:textSize="20sp"
                     android:textStyle="italic" />
 
@@ -322,11 +280,11 @@
                     android:layout_gravity="center"
                     android:layout_weight="50"
                     android:gravity="end"
-                    android:text="@string/hace_sol"
+                    android:text="@string/bien"
                     android:textSize="20sp" />
 
                 <ImageButton
-                    android:id="@+id/imgSunny"
+                    android:id="@+id/imgGood"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="5"
@@ -352,7 +310,7 @@
                     android:layout_gravity="center"
                     android:layout_weight="45"
                     android:gravity="start"
-                    android:text="@string/it_s_raining"
+                    android:text="@string/what_s_your_name"
                     android:textSize="20sp"
                     android:textStyle="italic" />
 
@@ -363,11 +321,11 @@
                     android:layout_gravity="center"
                     android:layout_weight="50"
                     android:gravity="center|end"
-                    android:text="@string/llueve"
+                    android:text="@string/c_mo_te_llamas"
                     android:textSize="20sp" />
 
                 <ImageButton
-                    android:id="@+id/imgRaining"
+                    android:id="@+id/imgWhatsYourName"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="5"
@@ -393,7 +351,7 @@
                     android:layout_gravity="center"
                     android:layout_weight="45"
                     android:gravity="start"
-                    android:text="@string/it_s_snowing"
+                    android:text="@string/my_name_is"
                     android:textSize="20sp"
                     android:textStyle="italic" />
 
@@ -404,11 +362,11 @@
                     android:layout_gravity="center"
                     android:layout_weight="50"
                     android:gravity="end"
-                    android:text="@string/nieva"
+                    android:text="@string/me_llamo"
                     android:textSize="20sp" />
 
                 <ImageButton
-                    android:id="@+id/imgSnowing"
+                    android:id="@+id/imgMyName"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="5"
@@ -434,7 +392,7 @@
                     android:layout_gravity="center"
                     android:layout_weight="45"
                     android:gravity="start"
-                    android:text="@string/it_s_windy"
+                    android:text="@string/i_m_pleased_to_meet_you"
                     android:textSize="20sp"
                     android:textStyle="italic" />
 
@@ -445,11 +403,11 @@
                     android:layout_gravity="center"
                     android:layout_weight="50"
                     android:gravity="end"
-                    android:text="@string/hace_viento"
+                    android:text="@string/encantado_de_conocerte"
                     android:textSize="20sp" />
 
                 <ImageButton
-                    android:id="@+id/imgWindy"
+                    android:id="@+id/imgPleased"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="5"
@@ -475,7 +433,7 @@
                     android:layout_gravity="center"
                     android:layout_weight="45"
                     android:gravity="start"
-                    android:text="@string/it_s_cloudy"
+                    android:text="@string/how_old_are_you"
                     android:textSize="20sp"
                     android:textStyle="italic" />
 
@@ -486,11 +444,11 @@
                     android:layout_gravity="center"
                     android:layout_weight="50"
                     android:gravity="end"
-                    android:text="@string/est_nublado"
+                    android:text="@string/cu_ntos_a_os_tienes"
                     android:textSize="20sp" />
 
                 <ImageButton
-                    android:id="@+id/imgCloudy"
+                    android:id="@+id/imgHowOldAreYou"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="5"
@@ -516,7 +474,7 @@
                     android:layout_gravity="center"
                     android:layout_weight="45"
                     android:gravity="start"
-                    android:text="@string/it_s_foggy"
+                    android:text="@string/i_am_20_years_old"
                     android:textSize="20sp"
                     android:textStyle="italic" />
 
@@ -527,11 +485,11 @@
                     android:layout_gravity="center"
                     android:layout_weight="50"
                     android:gravity="end"
-                    android:text="@string/hay_niebla"
+                    android:text="@string/tengo_20_a_os"
                     android:textSize="20sp" />
 
                 <ImageButton
-                    android:id="@+id/imgFoggy"
+                    android:id="@+id/imgIamYearsOld"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="5"
@@ -542,8 +500,87 @@
 
             </LinearLayout>
 
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10sp"
+                android:layout_marginBottom="10sp"
+                android:layout_weight="45"
+                android:orientation="horizontal">
 
+                <TextView
+                    android:id="@+id/textView40"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="45"
+                    android:gravity="start"
+                    android:text="@string/see_you_later"
+                    android:textSize="20sp"
+                    android:textStyle="italic" />
 
+                <TextView
+                    android:id="@+id/textView41"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="50"
+                    android:gravity="end"
+                    android:text="@string/hasta_luego"
+                    android:textSize="20sp" />
+
+                <ImageButton
+                    android:id="@+id/imgSeeYouLater"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    android:backgroundTint="#00FFFFFF"
+                    android:contentDescription="@string/todo"
+                    app:srcCompat="@drawable/play"
+                    tools:ignore="TouchTargetSizeCheck" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10sp"
+                android:layout_marginBottom="10sp"
+                android:layout_weight="45"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView42"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="45"
+                    android:gravity="start"
+                    android:text="@string/goodbye"
+                    android:textSize="20sp"
+                    android:textStyle="italic" />
+
+                <TextView
+                    android:id="@+id/textView43"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="50"
+                    android:gravity="end"
+                    android:text="@string/adi_s"
+                    android:textSize="20sp" />
+
+                <ImageButton
+                    android:id="@+id/imgGoodbye"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    android:backgroundTint="#00FFFFFF"
+                    android:contentDescription="@string/todo"
+                    app:srcCompat="@drawable/play"
+                    tools:ignore="TouchTargetSizeCheck" />
+
+            </LinearLayout>
         </LinearLayout>
     </ScrollView>
 
@@ -552,21 +589,8 @@
         android:layout_height="wrap_content"
         android:layout_weight="10"
         android:background="#6FFFEB3B"
-        android:gravity="center"
+        android:gravity="start"
         android:orientation="horizontal">
-
-        <ImageButton
-            android:id="@+id/imageButton3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="10sp"
-            android:backgroundTint="#00FFFFFF"
-            android:contentDescription="@string/todo"
-            android:minHeight="32dp"
-            android:onClick="goPreviousActivity"
-            android:paddingRight="140sp"
-            app:srcCompat="@drawable/previous"
-            tools:ignore="TouchTargetSizeCheck" />
 
         <ImageButton
             android:id="@+id/imageButton"
@@ -575,9 +599,9 @@
             android:layout_margin="10sp"
             android:backgroundTint="#00FFFFFF"
             android:contentDescription="@string/todo"
-            android:onClick="goNextActivity"
-            android:paddingLeft="140sp"
-            app:srcCompat="@drawable/next"
+            android:onClick="goPreviousActivity"
+            android:paddingRight="20sp"
+            app:srcCompat="@drawable/previous"
             tools:ignore="TouchTargetSizeCheck" />
     </LinearLayout>
 </LinearLayout>

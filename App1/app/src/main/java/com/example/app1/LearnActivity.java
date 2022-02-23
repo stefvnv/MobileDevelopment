@@ -16,6 +16,8 @@ public class LearnActivity extends ListActivity {
             "ColoursActivity",
             "TimeActivity",
             "WeatherActivity",
+            "DirectionsActivity",
+            "InformationActivity",
             "LessonsActivity"
     };
 
@@ -26,6 +28,8 @@ public class LearnActivity extends ListActivity {
             "Colours",
             "Time",
             "Weather",
+            "Directions",
+            "Information Signs",
             "More Spanish Lessons"
     };
 
