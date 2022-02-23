@@ -40,7 +40,7 @@
         android:onClick="goAboutActivity"
         android:text="@string/explore_spain"
         app:cornerRadius="20sp"
-        tools:ignore="TextContrastCheck" />
+        tools:ignore="TextContrastCheck,UsingOnClickInXml" />
 
     <Button
         android:id="@+id/btnLearn"
@@ -53,6 +53,6 @@
         android:onClick="goLearnActivity"
         android:text="@string/learn_spanish"
         app:cornerRadius="20sp"
-        tools:ignore="TextContrastCheck" />
+        tools:ignore="TextContrastCheck,UsingOnClickInXml" />
 
 </LinearLayout>

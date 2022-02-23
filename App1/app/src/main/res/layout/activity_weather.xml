@@ -28,7 +28,7 @@
             android:contentDescription="@string/todo"
             android:foregroundTint="#FFFFFF"
             app:srcCompat="@android:drawable/ic_menu_mapmode"
-            tools:ignore="DuplicateSpeakableTextCheck,ImageContrastCheck" />
+            tools:ignore="DuplicateSpeakableTextCheck,ImageContrastCheck,NestedWeights" />
 
         <TextView
             android:id="@+id/textView21"
@@ -193,7 +193,8 @@
                     android:gravity="start"
                     android:text="@string/a_storm_is_coming"
                     android:textSize="20sp"
-                    android:textStyle="italic" />
+                    android:textStyle="italic"
+                    tools:ignore="NestedWeights" />
 
                 <TextView
                     android:id="@+id/textView41"
@@ -354,7 +355,8 @@
                     android:gravity="start"
                     android:text="@string/it_s_raining"
                     android:textSize="20sp"
-                    android:textStyle="italic" />
+                    android:textStyle="italic"
+                    tools:ignore="NestedWeights" />
 
                 <TextView
                     android:id="@+id/textView31"
@@ -395,7 +397,8 @@
                     android:gravity="start"
                     android:text="@string/it_s_snowing"
                     android:textSize="20sp"
-                    android:textStyle="italic" />
+                    android:textStyle="italic"
+                    tools:ignore="NestedWeights" />
 
                 <TextView
                     android:id="@+id/textView33"
@@ -436,7 +439,8 @@
                     android:gravity="start"
                     android:text="@string/it_s_windy"
                     android:textSize="20sp"
-                    android:textStyle="italic" />
+                    android:textStyle="italic"
+                    tools:ignore="NestedWeights" />
 
                 <TextView
                     android:id="@+id/textView35"
@@ -477,7 +481,8 @@
                     android:gravity="start"
                     android:text="@string/it_s_cloudy"
                     android:textSize="20sp"
-                    android:textStyle="italic" />
+                    android:textStyle="italic"
+                    tools:ignore="NestedWeights" />
 
                 <TextView
                     android:id="@+id/textView37"
@@ -518,7 +523,8 @@
                     android:gravity="start"
                     android:text="@string/it_s_foggy"
                     android:textSize="20sp"
-                    android:textStyle="italic" />
+                    android:textStyle="italic"
+                    tools:ignore="NestedWeights" />
 
                 <TextView
                     android:id="@+id/textView39"
@@ -564,9 +570,9 @@
             android:contentDescription="@string/todo"
             android:minHeight="32dp"
             android:onClick="goPreviousActivity"
-            android:paddingRight="140sp"
+            android:paddingEnd="140sp"
             app:srcCompat="@drawable/previous"
-            tools:ignore="TouchTargetSizeCheck" />
+            tools:ignore="RtlSymmetry,TouchTargetSizeCheck,UsingOnClickInXml" />
 
         <ImageButton
             android:id="@+id/imageButton"
@@ -576,8 +582,8 @@
             android:backgroundTint="#00FFFFFF"
             android:contentDescription="@string/todo"
             android:onClick="goNextActivity"
-            android:paddingLeft="140sp"
+            android:paddingStart="140sp"
             app:srcCompat="@drawable/next"
-            tools:ignore="TouchTargetSizeCheck" />
+            tools:ignore="RtlSymmetry,TouchTargetSizeCheck,UsingOnClickInXml" />
     </LinearLayout>
 </LinearLayout>

@@ -91,5 +91,6 @@
         android:backgroundTint="#FFC107"
         android:onClick="goCity"
         android:text="@string/explore"
-        app:cornerRadius="20sp" />
+        app:cornerRadius="20sp"
+        tools:ignore="UsingOnClickInXml" />
 </LinearLayout>

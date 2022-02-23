@@ -28,14 +28,14 @@
             android:contentDescription="@string/todo"
             android:foregroundTint="#FFFFFF"
             app:srcCompat="@android:drawable/stat_sys_warning"
-            tools:ignore="DuplicateSpeakableTextCheck,ImageContrastCheck" />
+            tools:ignore="DuplicateSpeakableTextCheck,ImageContrastCheck,NestedWeights" />
 
         <TextView
             android:id="@+id/textView21"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="95"
-            android:text="Information Signs"
+            android:text="@string/information_informaci_n"
             android:textColor="#F8F8F8"
             android:textSize="24sp"
             android:textStyle="bold" />
@@ -69,7 +69,7 @@
                     android:layout_gravity="center"
                     android:layout_weight="45"
                     android:gravity="start"
-                    android:text="@string/hello"
+                    android:text="@string/arrivals"
                     android:textSize="20sp"
                     android:textStyle="italic" />
 
@@ -80,11 +80,11 @@
                     android:layout_gravity="center"
                     android:layout_weight="50"
                     android:gravity="end"
-                    android:text="@string/hola"
+                    android:text="@string/llegadas"
                     android:textSize="20sp" />
 
                 <ImageButton
-                    android:id="@+id/imgHello"
+                    android:id="@+id/imgArrivals"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="5"
@@ -109,7 +109,7 @@
                     android:layout_gravity="center"
                     android:layout_weight="45"
                     android:gravity="start"
-                    android:text="@string/good_morning"
+                    android:text="@string/departures"
                     android:textSize="20sp"
                     android:textStyle="italic" />
 
@@ -120,11 +120,11 @@
                     android:layout_gravity="center"
                     android:layout_weight="50"
                     android:gravity="end"
-                    android:text="@string/buenos_d_as"
+                    android:text="@string/salidas"
                     android:textSize="20sp" />
 
                 <ImageButton
-                    android:id="@+id/imgGoodMorning"
+                    android:id="@+id/imgDepartures"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="5"
@@ -149,7 +149,7 @@
                     android:layout_gravity="center"
                     android:layout_weight="45"
                     android:gravity="start"
-                    android:text="@string/good_afternoon"
+                    android:text="@string/entrance"
                     android:textSize="20sp"
                     android:textStyle="italic" />
 
@@ -160,11 +160,11 @@
                     android:layout_gravity="center"
                     android:layout_weight="50"
                     android:gravity="end"
-                    android:text="@string/buenas_tardes"
+                    android:text="@string/entrada"
                     android:textSize="20sp" />
 
                 <ImageButton
-                    android:id="@+id/imgGoodAfternoon"
+                    android:id="@+id/imgEntrance"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="5"
@@ -189,7 +189,7 @@
                     android:layout_gravity="center"
                     android:layout_weight="45"
                     android:gravity="start"
-                    android:text="@string/good_evening_night"
+                    android:text="@string/exit"
                     android:textSize="20sp"
                     android:textStyle="italic" />
 
@@ -200,11 +200,11 @@
                     android:layout_gravity="center"
                     android:layout_weight="50"
                     android:gravity="end"
-                    android:text="@string/buenas_noches"
+                    android:text="@string/salida"
                     android:textSize="20sp" />
 
                 <ImageButton
-                    android:id="@+id/imgGoodNight"
+                    android:id="@+id/imgExit"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="5"
@@ -229,7 +229,7 @@
                     android:layout_gravity="center"
                     android:layout_weight="45"
                     android:gravity="start"
-                    android:text="@string/how_are_you"
+                    android:text="@string/no_entry"
                     android:textSize="20sp"
                     android:textStyle="italic" />
 
@@ -240,11 +240,11 @@
                     android:layout_gravity="center"
                     android:layout_weight="50"
                     android:gravity="center|end"
-                    android:text="@string/c_mo_est_s"
+                    android:text="@string/prohibido_entrar"
                     android:textSize="20sp" />
 
                 <ImageButton
-                    android:id="@+id/imgHowAreYou"
+                    android:id="@+id/imgNoEntry"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="5"
@@ -269,7 +269,7 @@
                     android:layout_gravity="center"
                     android:layout_weight="45"
                     android:gravity="start"
-                    android:text="@string/good"
+                    android:text="@string/no_parking"
                     android:textSize="20sp"
                     android:textStyle="italic" />
 
@@ -280,11 +280,11 @@
                     android:layout_gravity="center"
                     android:layout_weight="50"
                     android:gravity="end"
-                    android:text="@string/bien"
+                    android:text="@string/prohibido_aparcar"
                     android:textSize="20sp" />
 
                 <ImageButton
-                    android:id="@+id/imgGood"
+                    android:id="@+id/imgNoParking"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="5"
@@ -310,9 +310,10 @@
                     android:layout_gravity="center"
                     android:layout_weight="45"
                     android:gravity="start"
-                    android:text="@string/what_s_your_name"
+                    android:text="@string/no_smoking"
                     android:textSize="20sp"
-                    android:textStyle="italic" />
+                    android:textStyle="italic"
+                    tools:ignore="NestedWeights" />
 
                 <TextView
                     android:id="@+id/textView31"
@@ -321,11 +322,11 @@
                     android:layout_gravity="center"
                     android:layout_weight="50"
                     android:gravity="center|end"
-                    android:text="@string/c_mo_te_llamas"
+                    android:text="@string/prohibido_fumar"
                     android:textSize="20sp" />
 
                 <ImageButton
-                    android:id="@+id/imgWhatsYourName"
+                    android:id="@+id/imgNoSmoking"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="5"
@@ -351,9 +352,10 @@
                     android:layout_gravity="center"
                     android:layout_weight="45"
                     android:gravity="start"
-                    android:text="@string/my_name_is"
+                    android:text="@string/open"
                     android:textSize="20sp"
-                    android:textStyle="italic" />
+                    android:textStyle="italic"
+                    tools:ignore="NestedWeights" />
 
                 <TextView
                     android:id="@+id/textView33"
@@ -362,11 +364,11 @@
                     android:layout_gravity="center"
                     android:layout_weight="50"
                     android:gravity="end"
-                    android:text="@string/me_llamo"
+                    android:text="@string/abierto"
                     android:textSize="20sp" />
 
                 <ImageButton
-                    android:id="@+id/imgMyName"
+                    android:id="@+id/imgOpen"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="5"
@@ -392,9 +394,10 @@
                     android:layout_gravity="center"
                     android:layout_weight="45"
                     android:gravity="start"
-                    android:text="@string/i_m_pleased_to_meet_you"
+                    android:text="@string/closed"
                     android:textSize="20sp"
-                    android:textStyle="italic" />
+                    android:textStyle="italic"
+                    tools:ignore="NestedWeights" />
 
                 <TextView
                     android:id="@+id/textView35"
@@ -403,11 +406,11 @@
                     android:layout_gravity="center"
                     android:layout_weight="50"
                     android:gravity="end"
-                    android:text="@string/encantado_de_conocerte"
+                    android:text="@string/cerrado"
                     android:textSize="20sp" />
 
                 <ImageButton
-                    android:id="@+id/imgPleased"
+                    android:id="@+id/imgClosed"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="5"
@@ -433,9 +436,10 @@
                     android:layout_gravity="center"
                     android:layout_weight="45"
                     android:gravity="start"
-                    android:text="@string/how_old_are_you"
+                    android:text="@string/toilets"
                     android:textSize="20sp"
-                    android:textStyle="italic" />
+                    android:textStyle="italic"
+                    tools:ignore="NestedWeights" />
 
                 <TextView
                     android:id="@+id/textView37"
@@ -444,11 +448,11 @@
                     android:layout_gravity="center"
                     android:layout_weight="50"
                     android:gravity="end"
-                    android:text="@string/cu_ntos_a_os_tienes"
+                    android:text="@string/servicios"
                     android:textSize="20sp" />
 
                 <ImageButton
-                    android:id="@+id/imgHowOldAreYou"
+                    android:id="@+id/imgToilets"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="5"
@@ -474,9 +478,10 @@
                     android:layout_gravity="center"
                     android:layout_weight="45"
                     android:gravity="start"
-                    android:text="@string/i_am_20_years_old"
+                    android:text="@string/free_admission"
                     android:textSize="20sp"
-                    android:textStyle="italic" />
+                    android:textStyle="italic"
+                    tools:ignore="NestedWeights" />
 
                 <TextView
                     android:id="@+id/textView39"
@@ -485,11 +490,11 @@
                     android:layout_gravity="center"
                     android:layout_weight="50"
                     android:gravity="end"
-                    android:text="@string/tengo_20_a_os"
+                    android:text="@string/entrada_libre"
                     android:textSize="20sp" />
 
                 <ImageButton
-                    android:id="@+id/imgIamYearsOld"
+                    android:id="@+id/imgFreeAdmission"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="5"
@@ -515,9 +520,10 @@
                     android:layout_gravity="center"
                     android:layout_weight="45"
                     android:gravity="start"
-                    android:text="@string/see_you_later"
+                    android:text="@string/be_careful"
                     android:textSize="20sp"
-                    android:textStyle="italic" />
+                    android:textStyle="italic"
+                    tools:ignore="NestedWeights" />
 
                 <TextView
                     android:id="@+id/textView41"
@@ -526,11 +532,11 @@
                     android:layout_gravity="center"
                     android:layout_weight="50"
                     android:gravity="end"
-                    android:text="@string/hasta_luego"
+                    android:text="@string/atenci_n"
                     android:textSize="20sp" />
 
                 <ImageButton
-                    android:id="@+id/imgSeeYouLater"
+                    android:id="@+id/imgBeCareful"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="5"
@@ -541,46 +547,6 @@
 
             </LinearLayout>
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginTop="10sp"
-                android:layout_marginBottom="10sp"
-                android:layout_weight="45"
-                android:orientation="horizontal">
-
-                <TextView
-                    android:id="@+id/textView42"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_weight="45"
-                    android:gravity="start"
-                    android:text="@string/goodbye"
-                    android:textSize="20sp"
-                    android:textStyle="italic" />
-
-                <TextView
-                    android:id="@+id/textView43"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_weight="50"
-                    android:gravity="end"
-                    android:text="@string/adi_s"
-                    android:textSize="20sp" />
-
-                <ImageButton
-                    android:id="@+id/imgGoodbye"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="5"
-                    android:backgroundTint="#00FFFFFF"
-                    android:contentDescription="@string/todo"
-                    app:srcCompat="@drawable/play"
-                    tools:ignore="TouchTargetSizeCheck" />
-
-            </LinearLayout>
         </LinearLayout>
     </ScrollView>
 
@@ -600,8 +566,8 @@
             android:backgroundTint="#00FFFFFF"
             android:contentDescription="@string/todo"
             android:onClick="goPreviousActivity"
-            android:paddingRight="20sp"
+            android:paddingEnd="20sp"
             app:srcCompat="@drawable/previous"
-            tools:ignore="TouchTargetSizeCheck" />
+            tools:ignore="RtlSymmetry,TouchTargetSizeCheck,UsingOnClickInXml" />
     </LinearLayout>
 </LinearLayout>

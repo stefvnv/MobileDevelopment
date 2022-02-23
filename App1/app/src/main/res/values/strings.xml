@@ -1,5 +1,5 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
-    <string name="app_name">App1</string>
+    <string name="app_name" tools:ignore="Typos">App1</string>
     <string name="enter_your_name_below">Enter your name below…</string>
     <string name="receiveName">TextView</string>
     <string name="string_textview" />
@@ -258,7 +258,7 @@
     <string name="est_nublado">Está nublado</string>
     <string name="se_acerca_una_tormenta">Se acerca una tormenta</string>
     <string name="sigue">Sigue</string>
-    <string name="where_is">Where is...?</string>
+    <string name="where_is">Where is…?</string>
     <string name="directions_direcciones">Directions/Direcciones</string>
     <string name="how_do_i_get_there">How do I get there?</string>
     <string name="how_far_is_it">How far is it?</string>
@@ -280,4 +280,30 @@
     <string name="cross">Cross</string>
     <string name="cruza">Cruza</string>
     <string name="in_front_of">In front of</string>
+    <string name="atenci_n">¡Atención!</string>
+    <string name="be_careful">Be careful!</string>
+    <string name="entrada_libre">Entrada libre</string>
+    <string name="free_admission">Free admission</string>
+    <string name="servicios">Servicios</string>
+    <string name="toilets">Toilets</string>
+    <string name="casa_del_poeta">Casa del Poeta</string>
+    <string name="prohibido_fumar">Prohibido fumar</string>
+    <string name="llegadas">Llegadas</string>
+    <string name="salidas">Salidas</string>
+    <string name="information_informaci_n">Information/Información</string>
+    <string name="entrance">Entrance</string>
+    <string name="departures">Departures</string>
+    <string name="arrivals">Arrivals</string>
+    <string name="exit">Exit</string>
+    <string name="no_entry">No entry</string>
+    <string name="salida">Salida</string>
+    <string name="prohibido_entrar">Prohibido entrar</string>
+    <string name="prohibido_aparcar">Prohibido aparcar</string>
+    <string name="entrada">Entrada</string>
+    <string name="no_parking">No parking</string>
+    <string name="no_smoking">No smoking</string>
+    <string name="cerrado">Cerrado</string>
+    <string name="abierto">Abierto</string>
+    <string name="open">Open</string>
+    <string name="closed">Closed</string>
 </resources>

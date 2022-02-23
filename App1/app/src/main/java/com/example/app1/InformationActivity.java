@@ -16,82 +16,76 @@ public class InformationActivity extends AppCompatActivity {
         setContentView(R.layout.activity_information);
 
         //Sounds
-        ImageButton imgHello = findViewById(R.id.imgHello);
-        imgHello.setOnClickListener(View -> {
-            MediaPlayer mp = MediaPlayer.create(InformationActivity.this, R.raw.hola);
+        ImageButton imgArrivals = findViewById(R.id.imgArrivals);
+        imgArrivals.setOnClickListener(View -> {
+            MediaPlayer mp = MediaPlayer.create(InformationActivity.this, R.raw.arrivals);
             mp.start();
         });
 
-        ImageButton imgGoodMorning = findViewById(R.id.imgGoodMorning);
-        imgGoodMorning.setOnClickListener(View -> {
-            MediaPlayer mp = MediaPlayer.create(InformationActivity.this, R.raw.goodmorning);
+        ImageButton imgDepartures = findViewById(R.id.imgDepartures);
+        imgDepartures.setOnClickListener(View -> {
+            MediaPlayer mp = MediaPlayer.create(InformationActivity.this, R.raw.departures);
             mp.start();
         });
 
-        ImageButton imgGoodAfternoon = findViewById(R.id.imgGoodAfternoon);
-        imgGoodAfternoon.setOnClickListener(View -> {
-            MediaPlayer mp = MediaPlayer.create(InformationActivity.this, R.raw.goodafternoon);
+        ImageButton imgEntrance = findViewById(R.id.imgEntrance);
+        imgEntrance.setOnClickListener(View -> {
+            MediaPlayer mp = MediaPlayer.create(InformationActivity.this, R.raw.entrance);
             mp.start();
         });
 
 
-        ImageButton imgGoodnight = findViewById(R.id.imgGoodNight);
-        imgGoodnight.setOnClickListener(View -> {
-            MediaPlayer mp = MediaPlayer.create(InformationActivity.this, R.raw.goodnight);
+        ImageButton imgExit = findViewById(R.id.imgExit);
+        imgExit.setOnClickListener(View -> {
+            MediaPlayer mp = MediaPlayer.create(InformationActivity.this, R.raw.exit);
             mp.start();
         });
 
-        ImageButton imgHowAreYou = findViewById(R.id.imgHowAreYou);
-        imgHowAreYou.setOnClickListener(View -> {
-            MediaPlayer mp = MediaPlayer.create(InformationActivity.this, R.raw.howareyou);
+        ImageButton imgNoEntry = findViewById(R.id.imgNoEntry);
+        imgNoEntry.setOnClickListener(View -> {
+            MediaPlayer mp = MediaPlayer.create(InformationActivity.this, R.raw.noentry);
             mp.start();
         });
 
-        ImageButton imgGood = findViewById(R.id.imgGood);
-        imgGood.setOnClickListener(View -> {
-            MediaPlayer mp = MediaPlayer.create(InformationActivity.this, R.raw.good);
+        ImageButton imgNoParking = findViewById(R.id.imgNoParking);
+        imgNoParking.setOnClickListener(View -> {
+            MediaPlayer mp = MediaPlayer.create(InformationActivity.this, R.raw.noparking);
             mp.start();
         });
 
-        ImageButton imgWhatsYourName = findViewById(R.id.imgWhatsYourName);
-        imgWhatsYourName.setOnClickListener(View -> {
-            MediaPlayer mp = MediaPlayer.create(InformationActivity.this, R.raw.whatsyourname);
+        ImageButton imgNoSmoking = findViewById(R.id.imgNoSmoking);
+        imgNoSmoking.setOnClickListener(View -> {
+            MediaPlayer mp = MediaPlayer.create(InformationActivity.this, R.raw.nosmoking);
             mp.start();
         });
 
-        ImageButton imgMyName = findViewById(R.id.imgMyName);
-        imgMyName.setOnClickListener(View -> {
-            MediaPlayer mp = MediaPlayer.create(InformationActivity.this, R.raw.mynameis);
+        ImageButton imgOpen = findViewById(R.id.imgOpen);
+        imgOpen.setOnClickListener(View -> {
+            MediaPlayer mp = MediaPlayer.create(InformationActivity.this, R.raw.open);
             mp.start();
         });
 
-        ImageButton imgPleased = findViewById(R.id.imgPleased);
-        imgPleased.setOnClickListener(View -> {
-            MediaPlayer mp = MediaPlayer.create(InformationActivity.this, R.raw.pleased);
+        ImageButton imgClosed = findViewById(R.id.imgClosed);
+        imgClosed.setOnClickListener(View -> {
+            MediaPlayer mp = MediaPlayer.create(InformationActivity.this, R.raw.closed);
             mp.start();
         });
 
-        ImageButton imgHowOldAreYou = findViewById(R.id.imgHowOldAreYou);
-        imgHowOldAreYou.setOnClickListener(View -> {
-            MediaPlayer mp = MediaPlayer.create(InformationActivity.this, R.raw.howold);
+        ImageButton imgToilets = findViewById(R.id.imgToilets);
+        imgToilets.setOnClickListener(View -> {
+            MediaPlayer mp = MediaPlayer.create(InformationActivity.this, R.raw.toilets);
             mp.start();
         });
 
-        ImageButton imgIamYearsOld = findViewById(R.id.imgIamYearsOld);
-        imgIamYearsOld.setOnClickListener(View -> {
-            MediaPlayer mp = MediaPlayer.create(InformationActivity.this, R.raw.iamyearsold);
+        ImageButton imgFreeAdmission = findViewById(R.id.imgFreeAdmission);
+        imgFreeAdmission.setOnClickListener(View -> {
+            MediaPlayer mp = MediaPlayer.create(InformationActivity.this, R.raw.freeadmission);
             mp.start();
         });
 
-        ImageButton imgSeeYouLater = findViewById(R.id.imgSeeYouLater);
-        imgSeeYouLater.setOnClickListener(View -> {
-            MediaPlayer mp = MediaPlayer.create(InformationActivity.this, R.raw.seeyou);
-            mp.start();
-        });
-
-        ImageButton imgGoodbye = findViewById(R.id.imgGoodbye);
-        imgGoodbye.setOnClickListener(View -> {
-            MediaPlayer mp = MediaPlayer.create(InformationActivity.this, R.raw.goodbye);
+        ImageButton imgBeCareful = findViewById(R.id.imgBeCareful);
+        imgBeCareful.setOnClickListener(View -> {
+            MediaPlayer mp = MediaPlayer.create(InformationActivity.this, R.raw.becareful);
             mp.start();
         });
     }

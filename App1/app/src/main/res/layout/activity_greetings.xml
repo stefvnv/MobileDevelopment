@@ -28,7 +28,7 @@
             android:contentDescription="@string/todo"
             android:foregroundTint="#FFFFFF"
             app:srcCompat="@android:drawable/sym_action_chat"
-            tools:ignore="DuplicateSpeakableTextCheck,ImageContrastCheck" />
+            tools:ignore="DuplicateSpeakableTextCheck,ImageContrastCheck,NestedWeights" />
 
         <TextView
             android:id="@+id/textView21"
@@ -312,7 +312,8 @@
                     android:gravity="start"
                     android:text="@string/what_s_your_name"
                     android:textSize="20sp"
-                    android:textStyle="italic" />
+                    android:textStyle="italic"
+                    tools:ignore="NestedWeights" />
 
                 <TextView
                     android:id="@+id/textView31"
@@ -353,7 +354,8 @@
                     android:gravity="start"
                     android:text="@string/my_name_is"
                     android:textSize="20sp"
-                    android:textStyle="italic" />
+                    android:textStyle="italic"
+                    tools:ignore="NestedWeights" />
 
                 <TextView
                     android:id="@+id/textView33"
@@ -394,7 +396,8 @@
                     android:gravity="start"
                     android:text="@string/i_m_pleased_to_meet_you"
                     android:textSize="20sp"
-                    android:textStyle="italic" />
+                    android:textStyle="italic"
+                    tools:ignore="NestedWeights" />
 
                 <TextView
                     android:id="@+id/textView35"
@@ -435,7 +438,8 @@
                     android:gravity="start"
                     android:text="@string/how_old_are_you"
                     android:textSize="20sp"
-                    android:textStyle="italic" />
+                    android:textStyle="italic"
+                    tools:ignore="NestedWeights" />
 
                 <TextView
                     android:id="@+id/textView37"
@@ -476,7 +480,8 @@
                     android:gravity="start"
                     android:text="@string/i_am_20_years_old"
                     android:textSize="20sp"
-                    android:textStyle="italic" />
+                    android:textStyle="italic"
+                    tools:ignore="NestedWeights" />
 
                 <TextView
                     android:id="@+id/textView39"
@@ -517,7 +522,8 @@
                     android:gravity="start"
                     android:text="@string/see_you_later"
                     android:textSize="20sp"
-                    android:textStyle="italic" />
+                    android:textStyle="italic"
+                    tools:ignore="NestedWeights" />
 
                 <TextView
                     android:id="@+id/textView41"
@@ -558,7 +564,8 @@
                     android:gravity="start"
                     android:text="@string/goodbye"
                     android:textSize="20sp"
-                    android:textStyle="italic" />
+                    android:textStyle="italic"
+                    tools:ignore="NestedWeights" />
 
                 <TextView
                     android:id="@+id/textView43"
@@ -600,9 +607,9 @@
             android:backgroundTint="#00FFFFFF"
             android:contentDescription="@string/todo"
             android:onClick="goNextActivity"
-            android:paddingRight="20sp"
+            android:paddingEnd="20sp"
             app:srcCompat="@drawable/next"
-            tools:ignore="TouchTargetSizeCheck" />
+            tools:ignore="RtlSymmetry,TouchTargetSizeCheck,UsingOnClickInXml" />
     </LinearLayout>
 
 </LinearLayout>
