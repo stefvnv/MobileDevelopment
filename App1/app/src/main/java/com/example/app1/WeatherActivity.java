@@ -8,7 +8,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
 
-public class TimeActivity extends AppCompatActivity {
+public class WeatherActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -18,97 +18,91 @@ public class TimeActivity extends AppCompatActivity {
         //Sounds
         ImageButton imgClock = findViewById(R.id.imgClock);
         imgClock.setOnClickListener(View -> {
-            MediaPlayer mp = MediaPlayer.create(TimeActivity.this, R.raw.clock);
+            MediaPlayer mp = MediaPlayer.create(WeatherActivity.this, R.raw.clock);
             mp.start();
         });
 
         ImageButton imgHour = findViewById(R.id.imgHour);
         imgHour.setOnClickListener(View -> {
-            MediaPlayer mp = MediaPlayer.create(TimeActivity.this, R.raw.hour);
+            MediaPlayer mp = MediaPlayer.create(WeatherActivity.this, R.raw.hour);
             mp.start();
         });
 
         ImageButton imgMinute = findViewById(R.id.imgMinute);
         imgMinute.setOnClickListener(View -> {
-            MediaPlayer mp = MediaPlayer.create(TimeActivity.this, R.raw.minute);
+            MediaPlayer mp = MediaPlayer.create(WeatherActivity.this, R.raw.minute);
             mp.start();
         });
 
         ImageButton imgSecond = findViewById(R.id.imgSecond);
         imgSecond.setOnClickListener(View -> {
-            MediaPlayer mp = MediaPlayer.create(TimeActivity.this, R.raw.second);
+            MediaPlayer mp = MediaPlayer.create(WeatherActivity.this, R.raw.second);
             mp.start();
         });
 
         ImageButton imgHalf = findViewById(R.id.imgHalf);
         imgHalf.setOnClickListener(View -> {
-            MediaPlayer mp = MediaPlayer.create(TimeActivity.this, R.raw.half);
+            MediaPlayer mp = MediaPlayer.create(WeatherActivity.this, R.raw.half);
             mp.start();
         });
 
         ImageButton imgQuarter = findViewById(R.id.imgQuarter);
         imgQuarter.setOnClickListener(View -> {
-            MediaPlayer mp = MediaPlayer.create(TimeActivity.this, R.raw.quarter);
-            mp.start();
-        });
-
-        ImageButton imgWhatTime = findViewById(R.id.imgWhatTime);
-        imgWhatTime.setOnClickListener(View -> {
-            MediaPlayer mp = MediaPlayer.create(TimeActivity.this, R.raw.whattime);
+            MediaPlayer mp = MediaPlayer.create(WeatherActivity.this, R.raw.quarter);
             mp.start();
         });
 
         ImageButton imgMonday = findViewById(R.id.imgMonday);
         imgMonday.setOnClickListener(View -> {
-            MediaPlayer mp = MediaPlayer.create(TimeActivity.this, R.raw.monday);
+            MediaPlayer mp = MediaPlayer.create(WeatherActivity.this, R.raw.monday);
             mp.start();
         });
 
         ImageButton imgTuesday = findViewById(R.id.imgTuesday);
         imgTuesday.setOnClickListener(View -> {
-            MediaPlayer mp = MediaPlayer.create(TimeActivity.this, R.raw.tuesday);
+            MediaPlayer mp = MediaPlayer.create(WeatherActivity.this, R.raw.tuesday);
             mp.start();
         });
 
         ImageButton imgWednesday = findViewById(R.id.imgWednesday);
         imgWednesday.setOnClickListener(View -> {
-            MediaPlayer mp = MediaPlayer.create(TimeActivity.this, R.raw.wednesday);
+            MediaPlayer mp = MediaPlayer.create(WeatherActivity.this, R.raw.wednesday);
             mp.start();
         });
 
         ImageButton imgThursday = findViewById(R.id.imgThursday);
         imgThursday.setOnClickListener(View -> {
-            MediaPlayer mp = MediaPlayer.create(TimeActivity.this, R.raw.thursday);
+            MediaPlayer mp = MediaPlayer.create(WeatherActivity.this, R.raw.thursday);
             mp.start();
         });
 
         ImageButton imgFriday = findViewById(R.id.imgFriday);
         imgFriday.setOnClickListener(View -> {
-            MediaPlayer mp = MediaPlayer.create(TimeActivity.this, R.raw.friday);
+            MediaPlayer mp = MediaPlayer.create(WeatherActivity.this, R.raw.friday);
             mp.start();
         });
 
         ImageButton imgSaturday = findViewById(R.id.imgSaturday);
         imgSaturday.setOnClickListener(View -> {
-            MediaPlayer mp = MediaPlayer.create(TimeActivity.this, R.raw.saturday);
+            MediaPlayer mp = MediaPlayer.create(WeatherActivity.this, R.raw.saturday);
             mp.start();
         });
 
         ImageButton imgSunday = findViewById(R.id.imgSunday);
         imgSunday.setOnClickListener(View -> {
-            MediaPlayer mp = MediaPlayer.create(TimeActivity.this, R.raw.sunday);
+            MediaPlayer mp = MediaPlayer.create(WeatherActivity.this, R.raw.sunday);
             mp.start();
         });
     }
 
     //Easy Button Click
     public void goPreviousActivity(View view) {
-        Intent i = new Intent(TimeActivity.this, ColoursActivity.class);
+        Intent i = new Intent(WeatherActivity.this, ColoursActivity.class);
         startActivity(i);
     }
 
     public void goNextActivity(View view) {
-        Intent i = new Intent(TimeActivity.this, WeatherActivity.class);
+        Intent i = new Intent(WeatherActivity.this, WeatherActivity.class);
         startActivity(i);
     }
 }

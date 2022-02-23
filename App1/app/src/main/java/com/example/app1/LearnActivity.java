@@ -13,14 +13,20 @@ public class LearnActivity extends ListActivity {
             "GreetingsActivity",
             "ConversationActivity",
             "DetailsActivity",
-            "ColoursActivity"
+            "ColoursActivity",
+            "TimeActivity",
+            "WeatherActivity",
+            "LessonsActivity"
     };
 
     String[] myLabels = {
             "Greetings",
             "General Conversation",
             "Personal Details",
-            "Colours"
+            "Colours",
+            "Time",
+            "Weather",
+            "More Spanish Lessons"
     };
 
     @Override
