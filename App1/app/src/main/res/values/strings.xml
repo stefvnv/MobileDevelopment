@@ -18,7 +18,7 @@
     <string name="seville">Seville</string>
     <string name="palma_de_mallorca">Palma de Mallorca</string>
     <string name="granada">Granada</string>
-    <string name="other">Other</string>
+    <string name="other" tools:ignore="DuplicateDefinition">Other</string>
     <string name="explore">EXPLORE</string>
     <string name="where_would_you_like_to_travel">Where would you like to travel?</string>
     <string name="barc">Barcelona</string>
@@ -313,4 +313,12 @@
     <string name="bad">Bad</string>
     <string name="rate">rate</string>
     <string name="stefana_chiritescu_2022">© Stefana Chiritescu 2022</string>
+    <string name="interesting">Interesting</string>
+    <string name="easy_to_navigate">Easy to navigate</string>
+    <string name="you_described_our_app_as">You described our app as</string>
+    <string name="boring">Boring</string>
+    <string name="fun">Fun</string>
+    <string name="please_take">Please take a moment to explain why you chose these words…</string>
+    <string name="send">send</string>
+    <string name="how_would_you_describe_our_app">How would you describe our app?</string>
 </resources>
