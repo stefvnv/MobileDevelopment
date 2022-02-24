@@ -23,34 +23,25 @@ public class BarcelonaActivity extends AppCompatActivity {
 
 
         //Intents
-        btnLocation.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent i = new Intent();
-                i.setAction(Intent.ACTION_VIEW);
-                i.setData(Uri.parse("geo:41.390694412075405, 2.169346519721641"));
+        btnLocation.setOnClickListener(view -> {
+            Intent i = new Intent();
+            i.setAction(Intent.ACTION_VIEW);
+            i.setData(Uri.parse("geo:41.390694412075405, 2.169346519721641"));
+            startActivity(i);
+        });
+
+        btnWebsite.setOnClickListener(view -> {
+            Uri uri = Uri.parse("https://www.almanachotels.com/barcelona");
+            Intent intent = new Intent(Intent.ACTION_VIEW, uri);
+            startActivity(intent);
+        });
+
+        btnCall.setOnClickListener(view -> {
+            Intent i = new Intent();
+            i.setAction(Intent.ACTION_DIAL);
+            i.setData(Uri.parse("tel:" + "+34930187000"));
+            if (i.resolveActivity(getPackageManager()) != null)
                 startActivity(i);
-            }
-        });
-
-        btnWebsite.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Uri uri = Uri.parse("https://www.almanachotels.com/barcelona");
-                Intent intent = new Intent(Intent.ACTION_VIEW, uri);
-                startActivity(intent);
-            }
-        });
-
-        btnCall.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent i = new Intent();
-                i.setAction(Intent.ACTION_DIAL);
-                i.setData(Uri.parse("tel:" + "+34930187000"));
-                if (i.resolveActivity(getPackageManager()) != null)
-                    startActivity(i);
-            }
         });
     }
 

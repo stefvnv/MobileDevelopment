@@ -9,8 +9,6 @@ import android.widget.VideoView;
 
 public class SebastianActivity extends AppCompatActivity {
 
-    private MediaController mc;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -18,7 +16,7 @@ public class SebastianActivity extends AppCompatActivity {
 
         VideoView vd = findViewById(R.id.videoView3);
         Uri uri = Uri.parse("android.resource://" + getPackageName() + "/" + R.raw.sebastian);
-        mc = new MediaController(this);
+        MediaController mc = new MediaController(this);
         vd.setMediaController(mc);
         vd.requestFocus();
         vd.setVideoURI(uri);

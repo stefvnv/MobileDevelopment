@@ -15,6 +15,7 @@ public class RateActivity extends AppCompatActivity {
         setContentView(R.layout.activity_rate);
     }
 
+    //Checkboxes
     public void goCheckBox(View v) {
         CheckBox checkBox = findViewById(R.id.checkBox);
         CheckBox checkBox2 = findViewById(R.id.checkBox2);

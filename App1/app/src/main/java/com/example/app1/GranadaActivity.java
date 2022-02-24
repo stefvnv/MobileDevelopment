@@ -2,6 +2,7 @@ package com.example.app1;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
@@ -11,6 +12,7 @@ import android.widget.ImageView;
 
 public class GranadaActivity extends AppCompatActivity {
 
+    @SuppressLint("QueryPermissionsNeeded")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -23,34 +25,25 @@ public class GranadaActivity extends AppCompatActivity {
 
 
         //Intents
-        btnLocation.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent i = new Intent();
-                i.setAction(Intent.ACTION_VIEW);
-                i.setData(Uri.parse("geo:37.17439607725324, -3.596692815489626"));
+        btnLocation.setOnClickListener(view -> {
+            Intent i = new Intent();
+            i.setAction(Intent.ACTION_VIEW);
+            i.setData(Uri.parse("geo:37.17439607725324, -3.596692815489626"));
+            startActivity(i);
+        });
+
+        btnWebsite.setOnClickListener(view -> {
+            Uri uri = Uri.parse("http://www.hotelgaranat.com/");
+            Intent intent = new Intent(Intent.ACTION_VIEW, uri);
+            startActivity(intent);
+        });
+
+        btnCall.setOnClickListener(view -> {
+            Intent i = new Intent();
+            i.setAction(Intent.ACTION_DIAL);
+            i.setData(Uri.parse("tel:" + "+34958225528"));
+            if (i.resolveActivity(getPackageManager()) != null)
                 startActivity(i);
-            }
-        });
-
-        btnWebsite.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Uri uri = Uri.parse("http://www.hotelgaranat.com/");
-                Intent intent = new Intent(Intent.ACTION_VIEW, uri);
-                startActivity(intent);
-            }
-        });
-
-        btnCall.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent i = new Intent();
-                i.setAction(Intent.ACTION_DIAL);
-                i.setData(Uri.parse("tel:" + "+34958225528"));
-                if (i.resolveActivity(getPackageManager()) != null)
-                    startActivity(i);
-            }
         });
     }
 

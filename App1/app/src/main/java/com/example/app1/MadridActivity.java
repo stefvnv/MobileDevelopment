@@ -23,34 +23,25 @@ public class MadridActivity extends AppCompatActivity {
 
 
         //Intents
-        btnLocation.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent i = new Intent();
-                i.setAction(Intent.ACTION_VIEW);
-                i.setData(Uri.parse("geo:40.41595994123346, -3.6996673809007032"));
+        btnLocation.setOnClickListener(view -> {
+            Intent i = new Intent();
+            i.setAction(Intent.ACTION_VIEW);
+            i.setData(Uri.parse("geo:40.41595994123346, -3.6996673809007032"));
+            startActivity(i);
+        });
+
+        btnWebsite.setOnClickListener(view -> {
+            Uri uri = Uri.parse("https://www.granhotelingles.com/");
+            Intent intent = new Intent(Intent.ACTION_VIEW, uri);
+            startActivity(intent);
+        });
+
+        btnCall.setOnClickListener(view -> {
+            Intent i = new Intent();
+            i.setAction(Intent.ACTION_DIAL);
+            i.setData(Uri.parse("tel:" + "+34913600001"));
+            if (i.resolveActivity(getPackageManager()) != null)
                 startActivity(i);
-            }
-        });
-
-        btnWebsite.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Uri uri = Uri.parse("https://www.granhotelingles.com/");
-                Intent intent = new Intent(Intent.ACTION_VIEW, uri);
-                startActivity(intent);
-            }
-        });
-
-        btnCall.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent i = new Intent();
-                i.setAction(Intent.ACTION_DIAL);
-                i.setData(Uri.parse("tel:" + "+34913600001"));
-                if (i.resolveActivity(getPackageManager()) != null)
-                    startActivity(i);
-            }
         });
     }
 

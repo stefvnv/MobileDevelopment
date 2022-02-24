@@ -17,7 +17,7 @@ public class AboutActivity extends AppCompatActivity {
 
     //Radio Group
     public void goCity(View v) {
-        RadioGroup radioGroup = (RadioGroup) findViewById(R.id.radioGroup);
+        RadioGroup radioGroup = findViewById(R.id.radioGroup);
         int selectedId = radioGroup.getCheckedRadioButtonId();
 
         if (selectedId == R.id.barcelona) {

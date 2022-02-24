@@ -23,34 +23,25 @@ public class PalmaActivity extends AppCompatActivity {
 
 
         //Intents
-        btnLocation.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent i = new Intent();
-                i.setAction(Intent.ACTION_VIEW);
-                i.setData(Uri.parse("geo:39.5690693130226, 2.6526244268922614"));
+        btnLocation.setOnClickListener(view -> {
+            Intent i = new Intent();
+            i.setAction(Intent.ACTION_VIEW);
+            i.setData(Uri.parse("geo:39.5690693130226, 2.6526244268922614"));
+            startActivity(i);
+        });
+
+        btnWebsite.setOnClickListener(view -> {
+            Uri uri = Uri.parse("https://hotelsantfrancesc.com/en");
+            Intent intent = new Intent(Intent.ACTION_VIEW, uri);
+            startActivity(intent);
+        });
+
+        btnCall.setOnClickListener(view -> {
+            Intent i = new Intent();
+            i.setAction(Intent.ACTION_DIAL);
+            i.setData(Uri.parse("tel:" + "+34971495000"));
+            if (i.resolveActivity(getPackageManager()) != null)
                 startActivity(i);
-            }
-        });
-
-        btnWebsite.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Uri uri = Uri.parse("https://hotelsantfrancesc.com/en");
-                Intent intent = new Intent(Intent.ACTION_VIEW, uri);
-                startActivity(intent);
-            }
-        });
-
-        btnCall.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent i = new Intent();
-                i.setAction(Intent.ACTION_DIAL);
-                i.setData(Uri.parse("tel:" + "+34971495000"));
-                if (i.resolveActivity(getPackageManager()) != null)
-                    startActivity(i);
-            }
         });
     }
 

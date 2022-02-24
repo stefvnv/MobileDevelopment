@@ -11,7 +11,6 @@ import android.widget.EditText;
 public class NameActivity extends AppCompatActivity {
 
     private EditText editName;
-    private Button btnContinue;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,14 +19,12 @@ public class NameActivity extends AppCompatActivity {
 
         //Pass Text
         editName = findViewById(R.id.editName);
-        btnContinue = findViewById(R.id.btnContinue);
-        btnContinue.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View arg0) {
-                Intent i = new Intent(NameActivity.this, MenuActivity.class);
-                String thename = editName.getText().toString();
-                i.putExtra("Name", thename);
-                startActivity(i);
-            }
+        Button btnContinue = findViewById(R.id.btnContinue);
+        btnContinue.setOnClickListener(arg0 -> {
+            Intent i = new Intent(NameActivity.this, MenuActivity.class);
+            String thename = editName.getText().toString();
+            i.putExtra("Name", thename);
+            startActivity(i);
         });
     }
 }
