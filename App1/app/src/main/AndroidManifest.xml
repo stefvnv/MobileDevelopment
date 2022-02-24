@@ -12,29 +12,41 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.App1">
         <activity
+            android:name=".RateActivity"
+            android:exported="false"
+            android:label="Spaniscape"/>
+        <activity
             android:name=".InformationActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:label="Spaniscape"/>
         <activity
             android:name=".DirectionsActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:label="Spaniscape"/>
         <activity
             android:name=".LessonsActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:label="Spaniscape"/>
         <activity
             android:name=".WeatherActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:label="Spaniscape"/>
         <activity
             android:name=".TimeActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:label="Spaniscape" />
         <activity
             android:name=".ColoursActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:label="Spaniscape"/>
         <activity
             android:name=".DetailsActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:label="Spaniscape"/>
         <activity
             android:name=".ConversationActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:label="Spaniscape"/>
         <activity
             android:name=".CordobaActivity"
             android:exported="false"

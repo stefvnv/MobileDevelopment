@@ -12,7 +12,7 @@
         android:id="@+id/receiveName"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="140sp"
+        android:layout_marginTop="100sp"
         android:gravity="center"
         android:text="@string/string_textview"
         android:textColor="#FAFAFA"
@@ -52,6 +52,19 @@
         android:backgroundTint="#F8AE40"
         android:onClick="goLearnActivity"
         android:text="@string/learn_spanish"
+        app:cornerRadius="20sp"
+        tools:ignore="TextContrastCheck,UsingOnClickInXml" />
+
+    <Button
+        android:id="@+id/btnRate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="100sp"
+        android:layout_marginTop="100sp"
+        android:layout_marginRight="100sp"
+        android:backgroundTint="#A59986"
+        android:onClick="goRateActivity"
+        android:text="@string/rate_spaniscape"
         app:cornerRadius="20sp"
         tools:ignore="TextContrastCheck,UsingOnClickInXml" />
 

@@ -47,15 +47,6 @@
                 android:textSize="22sp"
                 android:textStyle="italic" />
 
-            <ImageView
-                android:id="@+id/imgTenerife"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:adjustViewBounds="true"
-                android:contentDescription="@string/todo"
-                android:tag="1"
-                app:srcCompat="@drawable/tenerife" />
-
             <Button
                 android:id="@+id/btnImgTenerife"
                 android:layout_width="match_parent"
@@ -64,11 +55,20 @@
                 android:layout_marginTop="20sp"
                 android:layout_marginRight="100sp"
                 android:layout_marginBottom="20sp"
-                android:backgroundTint="#FF9800"
+                android:backgroundTint="#A59977"
                 android:tag="1"
                 android:text="@string/hide_show"
                 app:cornerRadius="20sp"
                 tools:ignore="TextContrastCheck" />
+
+            <ImageView
+                android:id="@+id/imgTenerife"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:contentDescription="@string/todo"
+                android:tag="1"
+                app:srcCompat="@drawable/tenerife" />
 
             <TextView
                 android:id="@+id/textView18"
@@ -99,15 +99,6 @@
                 android:textSize="22sp"
                 android:textStyle="italic" />
 
-            <ImageView
-                android:id="@+id/imgAlicante"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:adjustViewBounds="true"
-                android:contentDescription="@string/todo"
-                android:tag="1"
-                app:srcCompat="@drawable/alicante" />
-
             <Button
                 android:id="@+id/btnImgAlicante"
                 android:layout_width="match_parent"
@@ -116,9 +107,18 @@
                 android:layout_marginTop="20sp"
                 android:layout_marginRight="100sp"
                 android:layout_marginBottom="20sp"
-                android:backgroundTint="#FF9800"
+                android:backgroundTint="#A59977"
                 android:text="@string/hide_show"
                 app:cornerRadius="20sp" />
+
+            <ImageView
+                android:id="@+id/imgAlicante"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:contentDescription="@string/todo"
+                android:tag="1"
+                app:srcCompat="@drawable/alicante" />
 
             <TextView
                 android:id="@+id/textView8"
@@ -148,15 +148,6 @@
                 android:textSize="22sp"
                 android:textStyle="italic" />
 
-            <ImageView
-                android:id="@+id/imgSebastian"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:adjustViewBounds="true"
-                android:contentDescription="@string/todo"
-                android:tag="1"
-                app:srcCompat="@drawable/sebastian" />
-
             <Button
                 android:id="@+id/btnImgSebastian"
                 android:layout_width="match_parent"
@@ -165,9 +156,19 @@
                 android:layout_marginTop="20sp"
                 android:layout_marginRight="100sp"
                 android:layout_marginBottom="20sp"
-                android:backgroundTint="#FF9800"
+                android:backgroundTint="#A59977"
                 android:text="@string/hide_show"
                 app:cornerRadius="20sp" />
+
+            <ImageView
+                android:id="@+id/imgSebastian"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:contentDescription="@string/todo"
+                android:tag="1"
+                app:srcCompat="@drawable/sebastian"
+                tools:ignore="ImageContrastCheck" />
 
             <TextView
                 android:id="@+id/textView10"
@@ -197,15 +198,6 @@
                 android:textSize="22sp"
                 android:textStyle="italic" />
 
-            <ImageView
-                android:id="@+id/imgCordoba"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:adjustViewBounds="true"
-                android:contentDescription="@string/todo"
-                android:tag="1"
-                app:srcCompat="@drawable/cordoba" />
-
             <Button
                 android:id="@+id/btnImgCordoba"
                 android:layout_width="match_parent"
@@ -214,9 +206,18 @@
                 android:layout_marginTop="20sp"
                 android:layout_marginRight="100sp"
                 android:layout_marginBottom="20sp"
-                android:backgroundTint="#FF9800"
+                android:backgroundTint="#A59977"
                 android:text="@string/hide_show"
                 app:cornerRadius="20sp" />
+
+            <ImageView
+                android:id="@+id/imgCordoba"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:contentDescription="@string/todo"
+                android:tag="1"
+                app:srcCompat="@drawable/cordoba" />
 
             <TextView
                 android:id="@+id/textView12"

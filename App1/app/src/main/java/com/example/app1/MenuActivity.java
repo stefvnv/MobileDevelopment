@@ -35,4 +35,9 @@ public class MenuActivity extends AppCompatActivity {
         Intent i = new Intent(MenuActivity.this, LearnActivity.class);
         startActivity(i);
     }
+
+    public void goRateActivity(View view) {
+        Intent i = new Intent(MenuActivity.this, RateActivity.class);
+        startActivity(i);
+    }
 }

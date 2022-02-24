@@ -7,7 +7,6 @@
     <string name="name">Name</string>
     <string name="Proceed">Continue</string>
     <string name="what_should_we_call_you">What should we call you?</string>
-    <string name="spaniscape">Spaniscape</string>
     <string name="type_name">Type name</string>
     <string name="what_would_you_like_to_do">What would you like to do?</string>
     <string name="explore_spain">Explore Spain</string>
@@ -114,12 +113,9 @@
     <string name="what_s_your_name">What\'s your name?</string>
     <string name="i_am_20_years_old">I am 20 years old</string>
     <string name="hello">Hello</string>
-
     <string name="play">play</string>
     <string name="how_old_are_you">How old are you?</string>
     <string name="bien">Bien</string>
-
-    <string name="good">Good</string>
     <string name="how_are_you">How are you?</string>
     <string name="todo" tools:ignore="DuplicateDefinition">TODO</string>
     <string name="enter_name">Enter name</string>
@@ -306,4 +302,15 @@
     <string name="abierto">Abierto</string>
     <string name="open">Open</string>
     <string name="closed">Closed</string>
+    <string name="rate_spaniscape">RATE SPANISCAPE</string>
+    <string name="thank_you_for_using">Thank you for using</string>
+    <string name="spaniscape" tools:ignore="DuplicateDefinition">Spaniscape</string>
+    <string name="how_would_you_rate_our_app">How would you rate our app?</string>
+    <string name="excellent">Excellent</string>
+    <string name="very_good">Very good</string>
+    <string name="good" tools:ignore="DuplicateDefinition">Good</string>
+    <string name="ok">OK</string>
+    <string name="bad">Bad</string>
+    <string name="rate">rate</string>
+    <string name="stefana_chiritescu_2022">© Stefana Chiritescu 2022</string>
 </resources>
