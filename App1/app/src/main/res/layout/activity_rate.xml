@@ -101,14 +101,4 @@
         app:cornerRadius="20sp"
         tools:ignore="UsingOnClickInXml,TextContrastCheck" />
 
-    <TextView
-        android:id="@+id/textView49"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:gravity="bottom|center"
-        android:text="@string/stefana_chiritescu_2022"
-        android:textSize="16sp"
-        android:textStyle="italic"
-        tools:ignore="TextContrastCheck" />
-
 </LinearLayout>
