@@ -321,4 +321,5 @@
     <string name="please_take">Please take a moment to explain why you chose these words…</string>
     <string name="send">send</string>
     <string name="how_would_you_describe_our_app">How would you describe our app?</string>
+    <string name="could_you_briefly_explain_why_you_chose_these_words">Could you briefly explain why you chose these words?</string>
 </resources>
