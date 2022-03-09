@@ -1,3 +1,33 @@
 <resources>
     <string name="app_name">App2</string>
+    <string name="mode">mode</string>
+
+    <string name="molten">Chocolate Molten Cakes</string>
+    <string name="molten_desc">Bake an impressive dinner party dessert with minimum fuss – these
+        chocolate puddings, also known as chocolate fondant or lava cake, have a lovely gooey
+        centre.</string>
+    <string name="molten_text"><b>Ingredients</b>\n
+        100g butter, plus extra to grease\n
+        100g dark chocolate, chopped\n
+        150g light brown soft sugar\n
+        3 large eggs\n
+        ½ tsp vanilla extract\n
+        50g plain flour\n
+        Single cream, to serve\n\n
+        <b>Method</b>\n
+        <i>Step 1</i>\nHeat oven to 200C/180C fan/gas 6. Butter 6 dariole moulds or basins well and
+        place on a baking tray.\n\n
+        <i>Step 2</i>\nPut 100g butter and 100g chopped dark chocolate in a heatproof bowl and set
+        over a pan of hot water (or alternatively put in the microwave and melt in 30 second bursts
+        on a low setting) and stir until smooth. Set aside to cool slightly for 15 minutes.\n\n
+        <i>Step 3</i>\nUsing an electric hand whisk, mix in 150g light brown soft sugar, then 3 large
+        eggs, one at a time, followed by ½ tsp vanilla extract and finally 50g plain flour. Divide
+        the mixture among the darioles or basins.\n\n
+        <i>Step 4</i>\nYou can now either put the mixture in the fridge, or freezer until you\'re ready
+        to bake them. Can be cooked straight from frozen for 16 minutes, or bake now for 10-12
+        minutes until the tops are firm to the touch but the middles still feel squidgy.\n\n
+        <i>Step 5</i>\nCarefully run a knife around the edge of each pudding, then turn out onto
+        serving plates and serve with single cream.\n</string>
+    <string name="notes">Notes</string>
+    <string name="save">save</string>
 </resources>
