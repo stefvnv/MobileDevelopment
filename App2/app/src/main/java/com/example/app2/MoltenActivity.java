@@ -7,20 +7,42 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 import android.widget.ViewFlipper;
 
 public class MoltenActivity extends AppCompatActivity {
 
     private ViewFlipper viewFlipper;
-    private SharedPreferences notes;
+    private TextView noteOutput;
+    private EditText myNotes;
+    private Button okay;
+    String txt = "";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_molten);
-        viewFlipper = findViewById(R.id.view_flipper);
+        myNotes = findViewById(R.id.editText_notes);
+        noteOutput = findViewById(R.id.textView_saved);
+        okay = findViewById(R.id.btn_save);
+
+        okay.setOnClickListener(new View.OnClickListener(){
+
+            @Override
+            public void onClick(View view) {
+                txt = myNotes.getText().toString();
+                noteOutput.setText(txt);
+                SharedPreferences notes = getSharedPreferences("saved notes", MODE_PRIVATE);
+                SharedPreferences.Editor editor = notes.edit();
+                editor.putString("text", noteOutput.getText().toString());
+                editor.apply();
+
+            }
+        });
+        doStuff();
     }
 
     //Menu
@@ -42,7 +64,6 @@ public class MoltenActivity extends AppCompatActivity {
             //Shared Preferences
 
 
-
             Toast.makeText(this, "Test 1", Toast.LENGTH_SHORT).show();
             return true;
         }
@@ -51,60 +72,23 @@ public class MoltenActivity extends AppCompatActivity {
 
 
     //View Flipper
-    public void goPrevious(View view){
+    public void goPrevious(View view) {
         viewFlipper.setInAnimation(this, R.anim.slide_in_left);
         viewFlipper.setOutAnimation(this, R.anim.slide_out_right);
         viewFlipper.showPrevious();
     }
 
-    public void goNext(View view){
+    public void goNext(View view) {
         viewFlipper.setInAnimation(this, R.anim.slide_in_right);
         viewFlipper.setOutAnimation(this, R.anim.slide_out_left);
         viewFlipper.showNext();
     }
 
-
-
-
-    //Shared Preferences
-    public void goSave(View v){
-
-        notes = getApplicationContext().getSharedPreferences("notes", MODE_PRIVATE);
-        EditText myNotes =  findViewById(R.id.editText_notes);
-        String txt = myNotes.getText().toString();
-
-        SharedPreferences.Editor editor = notes.edit();
-        editor.putString("key_notes", txt);
-        editor.commit();
-
-        Toast.makeText(getBaseContext(), "Note saved successfully.", Toast.LENGTH_SHORT).show();
-
-        String note = notes.getString("key_notes", null);
-
-
-        //String sentText = extras.getString("Name");
-        myNotes.setVisibility(View.VISIBLE);
-        myNotes.setText(note);
-
-
+    public void doStuff() {
+        SharedPreferences notes = getSharedPreferences("saved notes", MODE_PRIVATE);
+        txt = notes.getString("text", "");
+        noteOutput.setText(txt);
     }
-
-    public void goShow(View v){
-        notes = getApplicationContext().getSharedPreferences("notes", MODE_PRIVATE);
-
-        String name = notes.getString("key_name", null);
-        Toast.makeText(getBaseContext(), name, Toast.LENGTH_SHORT).show();
-
-    }
-
-
-
-
-
-
-
-
-
 
     //Transitions (when back is pressed)
     @Override
