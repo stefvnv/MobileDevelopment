@@ -6,11 +6,8 @@ import android.content.ActivityNotFoundException;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.graphics.Bitmap;
-import android.graphics.BitmapFactory;
 import android.os.Bundle;
 import android.provider.MediaStore;
-import android.util.Base64;
-import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -28,7 +25,6 @@ public class MoltenActivity extends AppCompatActivity {
     private SharedPreferences notes;
     private SharedPreferences image;
     private SharedPreferences mode;
-
     private SharedPreferences tick;
 
     private ViewFlipper viewFlipper;
@@ -39,10 +35,14 @@ public class MoltenActivity extends AppCompatActivity {
     private Button btnCapture;
     private Button btnDelete;
 
+    private Menu optionsMenu;
+    private MenuItem menuItem;
+
     static final int REQUEST_IMAGE_CAPTURE = 1;
     ImageView imageView;
 
     String txt = "";
+    boolean ticked;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -75,6 +75,7 @@ public class MoltenActivity extends AppCompatActivity {
             }
         });
         getShared();
+
 
         btnClear.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -138,8 +139,13 @@ public class MoltenActivity extends AppCompatActivity {
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present
         getMenuInflater().inflate(R.menu.my_menu, menu);
+        optionsMenu = menu;
+        menuItem = optionsMenu.findItem(R.id.complete);
+        getSharedTicked(menuItem, true);
+        //onOptionsItemSelected(menuItem);
         return true;
     }
+
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
@@ -175,15 +181,37 @@ public class MoltenActivity extends AppCompatActivity {
 
         //Complete icon
         if (id == R.id.complete) {
-            if (item.getIcon().getConstantState().equals(getResources().getDrawable(R.drawable.circle).getConstantState())) {
-                item.setIcon(R.drawable.ticked);
-                Toast.makeText(this, "This recipe marked as complete.", Toast.LENGTH_SHORT).show();
-            } else if (item.getIcon().getConstantState().equals(getResources().getDrawable(R.drawable.ticked).getConstantState())) {
-                item.setIcon(R.drawable.circle);
-                Toast.makeText(this, "This recipe marked as incomplete.", Toast.LENGTH_SHORT).show();
-            }
+            getSharedTicked(item);
         }
         return super.onOptionsItemSelected(item);
+    }
+
+    public void getSharedTicked(MenuItem item) {
+
+        tick = getSharedPreferences("tick state", MODE_PRIVATE);
+        SharedPreferences.Editor editor = tick.edit();
+        ticked = tick.getBoolean("isItTicked", false);
+        ticked = !ticked;
+        if (ticked) {
+            item.setIcon(R.drawable.ticked);
+            Toast.makeText(this, "This recipe marked as complete.", Toast.LENGTH_SHORT).show();
+        } else {
+            item.setIcon(R.drawable.circle);
+            Toast.makeText(this, "This recipe marked as incomplete.", Toast.LENGTH_SHORT).show();
+        }
+        editor.putBoolean("isItTicked", ticked);
+        editor.apply();
+    }
+
+    public void getSharedTicked(MenuItem item, boolean comingFromMain) {
+        SharedPreferences contextTick = getSharedPreferences("tick state", MODE_PRIVATE);
+        ticked = contextTick.getBoolean("isItTicked", false);
+
+        if (ticked) {
+            item.setIcon(R.drawable.ticked);
+        } else {
+            item.setIcon(R.drawable.circle);
+        }
     }
 
 
