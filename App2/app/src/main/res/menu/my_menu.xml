@@ -8,4 +8,11 @@
         android:orderInCategory="1"
         yourapp:showAsAction="ifRoom"
         />
+
+    <item android:id="@+id/complete"
+        android:title="@string/complete"
+        android:icon="@drawable/circle"
+        android:orderInCategory="2"
+        yourapp:showAsAction="ifRoom"
+        />
 </menu>

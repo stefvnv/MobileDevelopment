@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.app2">
 
+    <uses-feature android:name="android.hardware.camera" android:required="true" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -11,34 +13,44 @@
         android:theme="@style/Theme.App2">
         <activity
             android:name=".TiramisuActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:label="Dessertly"/>
         <activity
             android:name=".TartActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:label="Dessertly"/>
         <activity
             android:name=".BananaPieActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:label="Dessertly"/>
         <activity
             android:name=".CobblerActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:label="Dessertly"/>
         <activity
             android:name=".PannaCottaActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:label="Dessertly"/>
         <activity
             android:name=".CheesecakeActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:label="Dessertly"/>
         <activity
             android:name=".TiffinActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:label="Dessertly"/>
         <activity
             android:name=".SpongeActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:label="Dessertly"/>
         <activity
             android:name=".FrangipaneActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:label="Dessertly"/>
         <activity
             android:name=".MoltenActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:label="Dessertly"/>
         <activity
             android:name=".MenuActivity"
             android:exported="false"

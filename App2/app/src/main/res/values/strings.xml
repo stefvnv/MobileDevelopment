@@ -30,4 +30,13 @@
         serving plates and serve with single cream.\n</string>
     <string name="notes">Notes</string>
     <string name="save">save</string>
+    <string name="dessertly">DESSERTLY</string>
+    <string name="find_the_foodie_in_you">Find the foodie in you</string>
+    <string name="start_cooking">Start Cooking</string>
+    <string name="capture">capture</string>
+    <string name="delete">delete</string>
+    <string name="todo">TODO</string>
+    <string name="clear">clear</string>
+    <string name="capture_result">Capture Result</string>
+    <string name="complete">complete</string>
 </resources>
