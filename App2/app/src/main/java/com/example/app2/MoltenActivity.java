@@ -18,25 +18,14 @@ import android.widget.TextView;
 import android.widget.Toast;
 import android.widget.ViewFlipper;
 
-import java.io.ByteArrayOutputStream;
-
+@SuppressWarnings("ALL")
 public class MoltenActivity extends AppCompatActivity {
 
-    private SharedPreferences notes;
-    private SharedPreferences image;
-    private SharedPreferences mode;
-    private SharedPreferences tick;
-
+    private SharedPreferences preferences;
     private ViewFlipper viewFlipper;
+
     private TextView textViewSaved;
     private EditText editTextNotes;
-    private Button btnSave;
-    private Button btnClear;
-    private Button btnCapture;
-    private Button btnDelete;
-
-    private Menu optionsMenu;
-    private MenuItem menuItem;
 
     static final int REQUEST_IMAGE_CAPTURE = 1;
     ImageView imageView;
@@ -54,45 +43,39 @@ public class MoltenActivity extends AppCompatActivity {
 
         editTextNotes = findViewById(R.id.editText_notes);
         textViewSaved = findViewById(R.id.textView_saved);
-        btnSave = findViewById(R.id.btn_save);
-        btnClear = findViewById(R.id.btn_clear);
+        Button btnSave = findViewById(R.id.btn_save);
+        Button btnClear = findViewById(R.id.btn_clear);
 
-        btnCapture = findViewById(R.id.btn_capture);
+        Button btnCapture = findViewById(R.id.btn_capture);
         imageView = findViewById(R.id.imageView);
 
         //Shared Preferences
-        btnSave.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                txt = editTextNotes.getText().toString();
-                textViewSaved.setText(txt);
+        btnSave.setOnClickListener(view -> {
+            txt = editTextNotes.getText().toString();
+            textViewSaved.setText(txt);
 
-                notes = getSharedPreferences("saved notes", MODE_PRIVATE);
-                SharedPreferences.Editor editor = notes.edit();
-                txt = notes.getString("text", "") + "• " + txt + "\n\n";
-                textViewSaved.setText(txt);
-                editor.putString("text", textViewSaved.getText().toString());
-                editor.apply();
-            }
+            preferences = getSharedPreferences("saved notes", MODE_PRIVATE);
+            SharedPreferences.Editor editor = preferences.edit();
+            txt = preferences.getString("text", "") + "• " + txt + "\n\n";
+            textViewSaved.setText(txt);
+            editor.putString("text", textViewSaved.getText().toString());
+            editor.apply();
         });
         getShared();
 
 
-        btnClear.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                if (textViewSaved.getText().toString().equals("")) {
-                    Toast.makeText(MoltenActivity.this, "There are no notes to be cleared.", Toast.LENGTH_SHORT).show();
-                } else {
-                    textViewSaved.setText("");
+        btnClear.setOnClickListener(view -> {
+            if (textViewSaved.getText().toString().equals("")) {
+                Toast.makeText(MoltenActivity.this, "There are no notes to be cleared.", Toast.LENGTH_SHORT).show();
+            } else {
+                textViewSaved.setText("");
 
-                    notes = getSharedPreferences("saved notes", MODE_PRIVATE);
-                    SharedPreferences.Editor editor = notes.edit();
-                    txt = notes.getString("text", "") + "";
-                    textViewSaved.setText("");
-                    editor.putString("text", textViewSaved.getText().toString());
-                    editor.apply();
-                }
+                preferences = getSharedPreferences("saved notes", MODE_PRIVATE);
+                SharedPreferences.Editor editor = preferences.edit();
+                txt = preferences.getString("text", "") + "";
+                textViewSaved.setText("");
+                editor.putString("text", textViewSaved.getText().toString());
+                editor.apply();
             }
         });
         getShared();
@@ -100,24 +83,21 @@ public class MoltenActivity extends AppCompatActivity {
 
 
         //Camera
-        btnCapture.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent takePictureIntent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
-                try {
-                    startActivityForResult(takePictureIntent, REQUEST_IMAGE_CAPTURE);
-                    // imageView.setVisibility(View.VISIBLE);
-                } catch (ActivityNotFoundException e) {
-                    // display error state to the user
-                }
+        btnCapture.setOnClickListener(view -> {
+            Intent takePictureIntent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
+            try {
+                startActivityForResult(takePictureIntent, REQUEST_IMAGE_CAPTURE);
+                imageView.setVisibility(View.VISIBLE);
+            } catch (ActivityNotFoundException e) {
+                Toast.makeText(MoltenActivity.this, "Capturing image failed.", Toast.LENGTH_SHORT).show();
             }
         });
     }
 
 
     public void getShared() {
-        SharedPreferences notes = getSharedPreferences("saved notes", MODE_PRIVATE);
-        txt = notes.getString("text", "");
+        SharedPreferences preferences = getSharedPreferences("saved notes", MODE_PRIVATE);
+        txt = preferences.getString("text", "");
         textViewSaved.setText(txt);
     }
 
@@ -139,12 +119,9 @@ public class MoltenActivity extends AppCompatActivity {
     //Menu
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present
         getMenuInflater().inflate(R.menu.my_menu, menu);
-        optionsMenu = menu;
-        menuItem = optionsMenu.findItem(R.id.complete);
+        MenuItem menuItem = menu.findItem(R.id.complete);
         getSharedTicked(menuItem, true);
-        //onOptionsItemSelected(menuItem);
         return true;
     }
 
@@ -152,8 +129,6 @@ public class MoltenActivity extends AppCompatActivity {
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         int id = item.getItemId();
-
-        String bgColour;
 
         //Light/Dark mode icon
         if (id == R.id.mode) {
@@ -172,9 +147,9 @@ public class MoltenActivity extends AppCompatActivity {
         View view = this.getWindow().getDecorView();
         //Shared Preferences
 
-        mode = getApplicationContext().getSharedPreferences("darkModeSetting", MODE_PRIVATE);
+        preferences = getApplicationContext().getSharedPreferences("darkModeSetting", MODE_PRIVATE);
 
-        darkModeEnabled = mode.getBoolean("isDarkEnabled", false);
+        darkModeEnabled = preferences.getBoolean("isDarkEnabled", false);
 
         if (darkModeEnabled) {
             view.setBackgroundColor(0xFF000000);
@@ -191,10 +166,10 @@ public class MoltenActivity extends AppCompatActivity {
         View view = this.getWindow().getDecorView();
         //Shared Preferences
 
-        mode = getApplicationContext().getSharedPreferences("darkModeSetting", MODE_PRIVATE);
-        SharedPreferences.Editor editor = mode.edit();
+        preferences = getApplicationContext().getSharedPreferences("darkModeSetting", MODE_PRIVATE);
+        SharedPreferences.Editor editor = preferences.edit();
 
-        darkModeEnabled = mode.getBoolean("isDarkEnabled", false);
+        darkModeEnabled = preferences.getBoolean("isDarkEnabled", false);
 
         darkModeEnabled = !darkModeEnabled;
 
@@ -216,9 +191,9 @@ public class MoltenActivity extends AppCompatActivity {
 
 
     public void getSharedTicked(MenuItem item) {
-        tick = getSharedPreferences("tick state", MODE_PRIVATE);
-        SharedPreferences.Editor editor = tick.edit();
-        ticked = tick.getBoolean("isItTicked", false);
+        preferences = getSharedPreferences("tick state", MODE_PRIVATE);
+        SharedPreferences.Editor editor = preferences.edit();
+        ticked = preferences.getBoolean("isItTicked", false);
         ticked = !ticked;
         if (ticked) {
             item.setIcon(R.drawable.ticked);
