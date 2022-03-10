@@ -43,6 +43,7 @@ public class MoltenActivity extends AppCompatActivity {
 
     String txt = "";
     boolean ticked;
+    boolean darkModeEnabled;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -95,6 +96,7 @@ public class MoltenActivity extends AppCompatActivity {
             }
         });
         getShared();
+        modeOnCreate();
 
 
         //Camera
@@ -155,27 +157,7 @@ public class MoltenActivity extends AppCompatActivity {
 
         //Light/Dark mode icon
         if (id == R.id.mode) {
-
-            //Shared Preferences
-            mode = getApplicationContext().getSharedPreferences("mode", MODE_PRIVATE);
-
-            //SharedPreferences.Editor editor = mode.edit();
-
-            View view = this.getWindow().getDecorView();
-
-            //bgColour = mode.view.getBackground().toString();
-
-            //editor.putString("key_mode", bgColour);
-            //editor.commit();
-
-            view.setBackgroundColor(0xFF000000);
-
-            //txt = notes.getString("text", "") + "• " + txt + "\n\n";
-            //textViewSaved.setText(txt);
-            //editor.putString("text", textViewSaved.getText().toString());
-            //editor.apply();
-
-            Toast.makeText(this, "Theme changed successfully.", Toast.LENGTH_SHORT).show();
+            modeOnClick();
             return true;
         }
 
@@ -186,8 +168,54 @@ public class MoltenActivity extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 
-    public void getSharedTicked(MenuItem item) {
+    public void modeOnCreate() {
+        View view = this.getWindow().getDecorView();
+        //Shared Preferences
 
+        mode = getApplicationContext().getSharedPreferences("darkModeSetting", MODE_PRIVATE);
+
+        darkModeEnabled = mode.getBoolean("isDarkEnabled", false);
+
+        if (darkModeEnabled) {
+            view.setBackgroundColor(0xFF000000);
+
+        } else {
+            view.setBackgroundColor(0xFFFFFFFF);
+
+        }
+
+
+    }
+
+    public void modeOnClick() {
+        View view = this.getWindow().getDecorView();
+        //Shared Preferences
+
+        mode = getApplicationContext().getSharedPreferences("darkModeSetting", MODE_PRIVATE);
+        SharedPreferences.Editor editor = mode.edit();
+
+        darkModeEnabled = mode.getBoolean("isDarkEnabled", false);
+
+        darkModeEnabled = !darkModeEnabled;
+
+        if (darkModeEnabled) {
+            view.setBackgroundColor(0xFF000000);
+
+            Toast.makeText(this, "Theme changed to dark mode.", Toast.LENGTH_SHORT).show();
+        } else {
+            view.setBackgroundColor(0xFFFFFFFF);
+
+            Toast.makeText(this, "Theme changed to light mode.", Toast.LENGTH_SHORT).show();
+        }
+
+
+        editor.putBoolean("isDarkEnabled", darkModeEnabled);
+        editor.apply();
+
+    }
+
+
+    public void getSharedTicked(MenuItem item) {
         tick = getSharedPreferences("tick state", MODE_PRIVATE);
         SharedPreferences.Editor editor = tick.edit();
         ticked = tick.getBoolean("isItTicked", false);
