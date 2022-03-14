@@ -245,9 +245,91 @@
         everything with the demerara sugar. Bake for 35-40 minutes or until the topping is golden and
         just cooked through. Remove from the oven and leave to rest for 5 minutes before serving
         straight from the dish with generous spoonfuls of clotted cream.\n</string>
-    <!--LEMON SPONGE CAKE-->
-    <!--LEMON SPONGE CAKE-->
-    <!--LEMON SPONGE CAKE-->
 
+    <!--LEMON SPONGE CAKE-->
+    <string name="banana">Butterscotch Banana Pie</string>
+    <string name="banana_desc">This impressive looking salted caramel dessert is fit for a dinner
+        party table, uses store-cupboard ingredients and is ready in under half an hour.</string>
+    <string name="banana_text"><b>Ingredients</b>\n
+        • 100g dark chocolate\n
+        • 125g malted milk or digestive biscuits\n
+        • 66g pack butterscotch pudding whip\n
+        • 300ml milk\n
+        • 2 medium bananas\n
+        • 60g salted caramel sauce ( or add a pinch of salt to caramel sauce)\n\n
 
+        <b>Method</b>\n
+        <i>Step 1</i>\nMelt 75g of the chocolate in the microwave in 30 second bursts. Whizz the
+        biscuits in a food processor into crumbs. Pour the melted chocolate onto the biscuit crumbs
+        and whizz again. Spread the biscuit mixture across the base and up the sides of a 16-18cm
+        shallow pie or cake tin, then put in the fridge to set\n\n
+        <i>Step 2</i>\nSprinkle the butterscotch pudding powder into the milk and whisk together
+        until smooth. Slice the bananas. Take the tin out of the fridge and spread the salted
+        caramel sauce over the base. Cover the caramel with the banana slices. The pudding will
+        have started to thicken, so give it a brief whisk, then spoon it over the bananas. Put in
+        the fridge for 5-10 minutes to set. Melt the remaining chocolate and drizzle over the pie to
+        serve.\n</string>
+
+    <!--BLACK FOREST TART-->
+    <string name="tart">Black Forest Tart</string>
+    <string name="tart_desc">Sweet cocoa pastry is filled with a rich, fruity filling of chocolate
+        and cherries in this heavenly German gateau-inspired dessert.</string>
+    <string name="tart_text"><b>Ingredients</b>\n
+        • 375g pack sweet shortcrust pastry, roughly chopped\n
+        • 4 tbsp cocoa powder\n
+        • 1 tsp vanilla extract\n
+        • 50g plain flour, plus extra for dusting\n
+        • 3 large eggs, 1 separated\n
+        • 75g dark chocolate, broken up\n
+        • 75g milk chocolate, broken up\n
+        • 50g butter, diced\n
+        • 140g jam\n
+        • 85g golden caster sugar\n
+        • couple of handfuls fresh cherries, pitted, plus extra to serve\n
+        • icing sugar, to serve\n
+        • crème fraîche, to serve\n\n
+
+        <b>Method</b>\n
+        <i>Step 1</i>\nMake chocolate pastry by pulsing the pastry, 2 tbsp cocoa and the vanilla in
+        a food processor. Roll out on a lightly floured work surface until it is the thickness of
+        a £1 coin and use to line a 22-23cm loose-bottomed tart tin. Chill for 30 minutes.\n\n
+        <i>Step 2</i>\nHeat oven to 200C/180C fan/gas 6. Scrunch up a sheet of baking parchment,
+        then flatten it out and press gently over the pastry. Pile in baking beans and blind-bake
+        for 15-20 minutes until the pastry is biscuity. Remove the parchment and beans and bake for 5
+        minutes more until cooked through. Brush with egg white and return to the oven for 2
+        minutes; this will help to keep the base crisp. Reduce oven to 180C/160C fan/gas 4 and
+        spread the jam over the base of the tart.\n\n
+        <i>Step 3</i>\nMelt the chocolate and butter in a microwave, in short bursts on High,
+        stirring in between, or in a bowl over – but not touching – a pan of barely simmering
+        water. Whisk the eggs, egg yolk and sugar with an electric whisk for a full 10 minutes until
+        pale and thick. Take your time when beating the eggs and sugar - they should be mousse-like.
+        Sieve the flour and remaining cocoa and fold in, together with the melted chocolate, using
+        a big metal spoon.\n\n
+        <i>Step 4</i>\nScrape into the tin and scatter over the cherries. Bake for 20-25 minutes until
+        the filling has slightly puffed but is still slightly wobbly when you shake it. Chill for 3
+        hrs or overnight, then sprinkle with a few cherries and a dusting of icing sugar. Serve with
+        crème fraîche.\n</string>
+
+    <!--TIRAMISU-->
+    <string name="tiramisu">Black Forest Tart</string>
+    <string name="tiramisu_desc">Sweet cocoa pastry is filled with a rich, fruity filling of chocolate
+        and cherries in this heavenly German gateau-inspired dessert.</string>
+    <string name="tiramisu_text"><b>Ingredients</b>\n
+        • 3 tsp instant coffee granules\n
+        • 3 tbsp coffee liqueur (or Camp Chicory and Coffee Essence)\n
+        • 250g tub mascarpone\n
+        • 85g condensed milk\n
+        • 1 tsp vanilla extract\n
+        • 4-6 sponge fingers\n
+        • 1 tbsp cocoa powder\n\n
+
+        <b>Method</b>\n
+        <i>Step 1</i>\nMix the coffee granules with 2 tbsp boiling water in a large jug and stir to
+        combine. Add the coffee liqueur and 75ml cold water. Pour into a shallow dish and set aside.\n\n
+        <i>Step 2</i>\nMake the cream layer by beating the mascarpone, condensed milk and vanilla
+        extract with an electric whisk until thick and smooth.\n\n
+        <i>Step 3</i>\nBreak the sponge fingers into two or three pieces and soak in the coffee
+        mixture for a few secs. Put a few bits of the sponge in the bottom of two wine or sundae
+        glasses and top with the cream. Sift over the cocoa and chill for at least 1 hr before
+        serving.\n</string>
 </resources>
