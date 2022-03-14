@@ -1,19 +1,33 @@
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
     <string name="app_name">App2</string>
     <string name="mode">mode</string>
+    <string name="notes">Notes</string>
+    <string name="save">save</string>
+    <string name="dessertly">DESSERTLY</string>
+    <string name="find_the_foodie_in_you">Find the foodie in you</string>
+    <string name="start_cooking">Start Cooking</string>
+    <string name="capture">capture</string>
+    <string name="delete">delete</string>
+    <string name="todo" tools:ignore="DuplicateDefinition">TODO</string>
+    <string name="add_note" tools:ignore="DuplicateDefinition">Add a note…</string>
+    <string name="clear">clear</string>
+    <string name="capture_result">Capture Result</string>
+    <string name="complete">complete</string>
 
+    <!--CHOCOLATE MOLTEN CAKES-->
     <string name="molten">Chocolate Molten Cakes</string>
     <string name="molten_desc">Bake an impressive dinner party dessert with minimum fuss – these
         chocolate puddings, also known as chocolate fondant or lava cake, have a lovely gooey
         centre.</string>
     <string name="molten_text"><b>Ingredients</b>\n
-        100g butter, plus extra to grease\n
-        100g dark chocolate, chopped\n
-        150g light brown soft sugar\n
-        3 large eggs\n
-        ½ tsp vanilla extract\n
-        50g plain flour\n
-        Single cream, to serve\n\n
+        • 100g butter, plus extra to grease\n
+        • 100g dark chocolate, chopped\n
+        • 150g light brown soft sugar\n
+        • 3 large eggs\n
+        • ½ tsp vanilla extract\n
+        • 50g plain flour\n
+        • single cream, to serve\n\n
+
         <b>Method</b>\n
         <i>Step 1</i>\nHeat oven to 200C/180C fan/gas 6. Butter 6 dariole moulds or basins well and
         place on a baking tray.\n\n
@@ -28,15 +42,95 @@
         minutes until the tops are firm to the touch but the middles still feel squidgy.\n\n
         <i>Step 5</i>\nCarefully run a knife around the edge of each pudding, then turn out onto
         serving plates and serve with single cream.\n</string>
-    <string name="notes">Notes</string>
-    <string name="save">save</string>
-    <string name="dessertly">DESSERTLY</string>
-    <string name="find_the_foodie_in_you">Find the foodie in you</string>
-    <string name="start_cooking">Start Cooking</string>
-    <string name="capture">capture</string>
-    <string name="delete">delete</string>
-    <string name="todo">TODO</string>
-    <string name="clear">clear</string>
-    <string name="capture_result">Capture Result</string>
-    <string name="complete">complete</string>
+
+    <!--CHERRY & ALMOND FRANGIPANE GALETTE -->
+    <string name="frangipane">Cherry &amp; Almond Frangipane Galette</string>
+    <string name="frangipane_desc">Use spelt pastry for this free-form pie, as its nuttiness
+        complements the frangipane. The combination of squishy baked cherries and juicy fresh
+        ones is lovely.</string>
+    <string name="frangipane_text"><b>Ingredients</b>\n
+        • 400g cherries , pitted and halved\n
+        • 1 tsp caster sugar\n
+        • 1 tbsp lemon juice\n
+        • 3 tbsp morello cherry conserve\n
+        • 1 egg , beaten\n
+        • 2 tbsp granulated sugar\n
+        • clotted cream, to serve (optional)\n
+        <b>For the pastry</b>\n
+        • 200g white spelt flour\n
+        • 1 tbsp caster sugar\n
+        • 120g unsalted butter, chilled and cut into cubes\n
+        <b>For the frangipane</b>\n
+        • 100g whole, skin-on almonds, toasted\n
+        • 15g unsalted butter\n
+        • 1 tbsp spelt flour, plus extra for dusting\n
+        • ½ tsp vanilla essence\n
+        • 50g golden caster sugar\n
+        • 1 egg\n\n
+
+        <b>Method</b>\n
+        <i>Step 1</i>\nHeat oven to 200C/180C fan/gas 6. Butter 6 dariole moulds or basins well and
+        place on a baking tray.\n\n
+        <i>Step 2</i>\nPut 100g butter and 100g chopped dark chocolate in a heatproof bowl and set
+        over a pan of hot water (or alternatively put in the microwave and melt in 30 second bursts
+        on a low setting) and stir until smooth. Set aside to cool slightly for 15 minutes.\n\n
+        <i>Step 3</i>\nUsing an electric hand whisk, mix in 150g light brown soft sugar, then 3 large
+        eggs, one at a time, followed by ½ tsp vanilla extract and finally 50g plain flour. Divide
+        the mixture among the darioles or basins.\n\n
+        <i>Step 4</i>\nYou can now either put the mixture in the fridge, or freezer until you\'re ready
+        to bake them. Can be cooked straight from frozen for 16 minutes, or bake now for 10-12
+        minutes until the tops are firm to the touch but the middles still feel squidgy.\n\n
+        <i>Step 5</i>\nCarefully run a knife around the edge of each pudding, then turn out onto
+        serving plates and serve with single cream.\n</string>
+
+
+    <!--LEMON SPONGE CAKE-->
+    <string name="sponge">Lemon Sponge Cake</string>
+    <string name="sponge_desc">Top this citrussy sponge with lemon icing and candied peel. Greek
+        yogurt creates a cake that\'s extra moist and tangy, for an irresistible teatime treat.</string>
+    <string name="sponge_text"><b>Ingredients</b>\n
+        • 175g unsalted butter, softened, plus extra for the tin\n
+        • 175g golden caster sugar\n
+        • 3 large eggs\n
+        • 3 large unwaxed lemons, zested, plus 4-4 ½ tbsp juice\n
+        • 250g self-raising flour\n
+        • ½ tsp baking powder\n
+        • 100g Greek yogurt\n
+        • 400g icing sugar\n
+        • Lemon zest or candied peel, to serve (optional)\n
+        <b>For the candied peel</b>\n
+         • 2 large lemons\n
+         • 200g granulated sugar\n\n
+
+        <b>Method</b>\n
+        <i>Step 1</i>\nHeat oven to 170C/150C fan/gas 3. Butter a deep, loose-bottomed, 18cm cake
+        tin and line the base with baking parchment. \n\n
+        <i>Step 2</i>\nBeat the butter and caster sugar together with an electric whisk until fluffy
+        and pale in colour. Crack the eggs in one at a time, beating well after each addition, then
+        stir in the lemon zest. Fold in the flour, baking powder and ½ tsp salt, then fold in the
+        yogurt.\n\n
+        <i>Step 3</i>\nSpoon the mixture into the lined tin, smoothing the top with a spatula. Bake
+        in the centre of the oven for 50-55 minutes, or until golden brown on top and firm to the
+        touch. Cool in the tin for 10 minutes before turning out onto a wire rack to cool completely.
+        Will keep in an airtight container for up to four days, or in the freezer for up to a month.\n\n
+        <i>Step 4</i>\nWhen you\’re ready to decorate, sieve the icing sugar into a bowl and beat in
+        enough of the lemon juice to create a thick icing. Set the cake on a serving plate or cake
+        stand, then spoon over the icing, allowing it to drip down the sides a little. Top with the
+        lemon zest or candied peel, if using (see below), and cut into generous wedges to serve.\n\n
+        <i>Step 5</i>\nTo make candied lemon peel, peel large, wide strips from the lemons using a
+        vegetable peeler. Remove any pith with a knife, then julienne the peel into very thin
+        matchsticks. Tip the granulated sugar into a saucepan with 200ml water and set over a medium
+        heat until the sugar has dissolved. Add the lemon peel and simmer gently for 15 minutes,
+        then scoop the peel out using a slotted spoon and set on a piece of kitchen paper to cool.
+        Use to decorate the top of your cake.\n</string>
+
+    <!--LEMON SPONGE CAKE-->
+    <!--LEMON SPONGE CAKE-->
+    <!--LEMON SPONGE CAKE-->
+    <!--LEMON SPONGE CAKE-->
+    <!--LEMON SPONGE CAKE-->
+    <!--LEMON SPONGE CAKE-->
+    <!--LEMON SPONGE CAKE-->
+
+
 </resources>

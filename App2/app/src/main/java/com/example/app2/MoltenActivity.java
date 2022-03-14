@@ -18,9 +18,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 import android.widget.ViewFlipper;
 
-@SuppressWarnings("ALL")
 public class MoltenActivity extends AppCompatActivity {
-
     private SharedPreferences preferences;
     private ViewFlipper viewFlipper;
 
@@ -54,7 +52,7 @@ public class MoltenActivity extends AppCompatActivity {
             txt = editTextNotes.getText().toString();
             textViewSaved.setText(txt);
 
-            preferences = getSharedPreferences("saved notes", MODE_PRIVATE);
+            preferences = getSharedPreferences("notes_molten", MODE_PRIVATE);
             SharedPreferences.Editor editor = preferences.edit();
             txt = preferences.getString("text", "") + "• " + txt + "\n\n";
             textViewSaved.setText(txt);
@@ -63,14 +61,13 @@ public class MoltenActivity extends AppCompatActivity {
         });
         getShared();
 
-
         btnClear.setOnClickListener(view -> {
             if (textViewSaved.getText().toString().equals("")) {
                 Toast.makeText(MoltenActivity.this, "There are no notes to be cleared.", Toast.LENGTH_SHORT).show();
             } else {
                 textViewSaved.setText("");
 
-                preferences = getSharedPreferences("saved notes", MODE_PRIVATE);
+                preferences = getSharedPreferences("notes_molten", MODE_PRIVATE);
                 SharedPreferences.Editor editor = preferences.edit();
                 txt = preferences.getString("text", "") + "";
                 textViewSaved.setText("");
@@ -96,7 +93,7 @@ public class MoltenActivity extends AppCompatActivity {
 
 
     public void getShared() {
-        SharedPreferences preferences = getSharedPreferences("saved notes", MODE_PRIVATE);
+        SharedPreferences preferences = getSharedPreferences("notes_molten", MODE_PRIVATE);
         txt = preferences.getString("text", "");
         textViewSaved.setText(txt);
     }
@@ -145,53 +142,41 @@ public class MoltenActivity extends AppCompatActivity {
 
     public void modeOnCreate() {
         View view = this.getWindow().getDecorView();
+
         //Shared Preferences
-
         preferences = getApplicationContext().getSharedPreferences("darkModeSetting", MODE_PRIVATE);
-
         darkModeEnabled = preferences.getBoolean("isDarkEnabled", false);
 
         if (darkModeEnabled) {
-            view.setBackgroundColor(0xFF000000);
-
+            view.setBackgroundColor(0xFF222222);
         } else {
             view.setBackgroundColor(0xFFFFFFFF);
-
         }
-
-
     }
 
     public void modeOnClick() {
         View view = this.getWindow().getDecorView();
-        //Shared Preferences
 
+        //Shared Preferences
         preferences = getApplicationContext().getSharedPreferences("darkModeSetting", MODE_PRIVATE);
         SharedPreferences.Editor editor = preferences.edit();
 
         darkModeEnabled = preferences.getBoolean("isDarkEnabled", false);
-
         darkModeEnabled = !darkModeEnabled;
 
         if (darkModeEnabled) {
-            view.setBackgroundColor(0xFF000000);
-
+            view.setBackgroundColor(0xFF222222);
             Toast.makeText(this, "Theme changed to dark mode.", Toast.LENGTH_SHORT).show();
         } else {
             view.setBackgroundColor(0xFFFFFFFF);
-
             Toast.makeText(this, "Theme changed to light mode.", Toast.LENGTH_SHORT).show();
         }
-
-
         editor.putBoolean("isDarkEnabled", darkModeEnabled);
         editor.apply();
-
     }
 
-
     public void getSharedTicked(MenuItem item) {
-        preferences = getSharedPreferences("tick state", MODE_PRIVATE);
+        preferences = getSharedPreferences("tick_molten", MODE_PRIVATE);
         SharedPreferences.Editor editor = preferences.edit();
         ticked = preferences.getBoolean("isItTicked", false);
         ticked = !ticked;
@@ -207,7 +192,7 @@ public class MoltenActivity extends AppCompatActivity {
     }
 
     public void getSharedTicked(MenuItem item, boolean comingFromMain) {
-        SharedPreferences contextTick = getSharedPreferences("tick state", MODE_PRIVATE);
+        SharedPreferences contextTick = getSharedPreferences("tick_molten", MODE_PRIVATE);
         ticked = contextTick.getBoolean("isItTicked", false);
 
         if (ticked) {
