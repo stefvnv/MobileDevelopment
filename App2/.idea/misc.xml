@@ -5,6 +5,8 @@
       <map>
         <entry key="..\:/Users/Stefana/Git/MobileDevelopment/App2/app/src/main/res/drawable/back.xml" value="0.24" />
         <entry key="..\:/Users/Stefana/Git/MobileDevelopment/App2/app/src/main/res/drawable/forward.xml" value="0.322" />
+        <entry key="..\:/Users/Stefana/Git/MobileDevelopment/App2/app/src/main/res/layout/activity_cheesecake.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/Stefana/Git/MobileDevelopment/App2/app/src/main/res/layout/activity_cobbler.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/Stefana/Git/MobileDevelopment/App2/app/src/main/res/layout/activity_frangipane.xml" value="0.33" />
         <entry key="..\:/Users/Stefana/Git/MobileDevelopment/App2/app/src/main/res/layout/activity_main.xml" value="0.25" />
         <entry key="..\:/Users/Stefana/Git/MobileDevelopment/App2/app/src/main/res/layout/activity_menu.xml" value="0.3625" />
@@ -12,6 +14,7 @@
         <entry key="..\:/Users/Stefana/Git/MobileDevelopment/App2/app/src/main/res/layout/activity_pannacotta.xml" value="0.3625" />
         <entry key="..\:/Users/Stefana/Git/MobileDevelopment/App2/app/src/main/res/layout/activity_sponge.xml" value="0.33" />
         <entry key="..\:/Users/Stefana/Git/MobileDevelopment/App2/app/src/main/res/layout/activity_tart.xml" value="0.3625" />
+        <entry key="..\:/Users/Stefana/Git/MobileDevelopment/App2/app/src/main/res/layout/activity_tiffin.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/Stefana/Git/MobileDevelopment/App2/app/src/main/res/layout/activity_tiramisu.xml" value="0.3625" />
         <entry key="..\:/Users/Stefana/Git/MobileDevelopment/App2/app/src/main/res/layout/my_row.xml" value="0.32592592592592595" />
         <entry key="..\:/Users/Stefana/Git/MobileDevelopment/App2/app/src/main/res/menu/my_menu.xml" value="0.28072916666666664" />

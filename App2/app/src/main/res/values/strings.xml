@@ -69,20 +69,27 @@
         • 1 egg\n\n
 
         <b>Method</b>\n
-        <i>Step 1</i>\nHeat oven to 200C/180C fan/gas 6. Butter 6 dariole moulds or basins well and
-        place on a baking tray.\n\n
-        <i>Step 2</i>\nPut 100g butter and 100g chopped dark chocolate in a heatproof bowl and set
-        over a pan of hot water (or alternatively put in the microwave and melt in 30 second bursts
-        on a low setting) and stir until smooth. Set aside to cool slightly for 15 minutes.\n\n
-        <i>Step 3</i>\nUsing an electric hand whisk, mix in 150g light brown soft sugar, then 3 large
-        eggs, one at a time, followed by ½ tsp vanilla extract and finally 50g plain flour. Divide
-        the mixture among the darioles or basins.\n\n
-        <i>Step 4</i>\nYou can now either put the mixture in the fridge, or freezer until you\'re ready
-        to bake them. Can be cooked straight from frozen for 16 minutes, or bake now for 10-12
-        minutes until the tops are firm to the touch but the middles still feel squidgy.\n\n
-        <i>Step 5</i>\nCarefully run a knife around the edge of each pudding, then turn out onto
-        serving plates and serve with single cream.\n</string>
-
+        <i>Step 1</i>\nFirst, make the pastry. Sift the flour into a bowl and stir in the sugar and
+        a pinch of salt. Add the butter and rub it in with your fingertips until you have a coarse
+        crumb consistency. Stir in 2-3 tbsp of ice-cold water and bring the mixture together with
+        your hands. Knead it against the side of the bowl, and if it comes together smoothly, squash
+        it into a ball. If it\’s still crumbling, add a little more iced water and work it until you
+        have a pliable pastry dough. Wrap it in baking parchment and chill for 30 minutes. Meanwhile,
+        macerate the cherries in the sugar and lemon juice in a bowl.\n\n
+        <i>Step 2</i>\nTo make the frangipane, blitz the almonds in a food processor until finely
+        chopped, then add the butter, flour, vanilla extract and sugar, and blitz until combined.
+        Add the egg, and blitz again to make a paste.\n\n
+        <i>Step 3</i>\nHeat oven to 160C/140C fan/gas 3. On a lightly floured surface, roll out the
+        pastry into a large circle about 30cm wide, and the thickness of a pound coin. It doesn\’t
+        matter if the edges are split. Slide onto a baking sheet lined with baking parchment, and
+        spread over the conserve, leaving about a 4cm border all the way around the edge. Cover this
+        with the frangipane, then press half the cherries into it. Fold over the pastry edges to
+        encase the edges of the cherries, pressing down the creases so it holds together. Brush with
+        the beaten egg and scatter some granulated sugar over the cherries and pastry. Put in the
+        freezer for 10 minutes.\n\n
+        <i>Step 4</i>\nBake the galette for 45 minutes, then remove from the oven and allow to cool
+        for 10-15 minutes. Pour over the remaining fresh cherries and spoon over any juices. Serve
+        with clotted cream, if you like.\n</string>
 
     <!--LEMON SPONGE CAKE-->
     <string name="sponge">Lemon Sponge Cake</string>
@@ -124,10 +131,120 @@
         then scoop the peel out using a slotted spoon and set on a piece of kitchen paper to cool.
         Use to decorate the top of your cake.\n</string>
 
-    <!--LEMON SPONGE CAKE-->
-    <!--LEMON SPONGE CAKE-->
-    <!--LEMON SPONGE CAKE-->
-    <!--LEMON SPONGE CAKE-->
+    <!--CHOCOLATE TIFFIN-->
+    <string name="tiffin">Chocolate Tiffin</string>
+    <string name="tiffin_desc">Go all out and treat yourself to these chocolate tiffin slices, full
+        of milk and dark chocolate, raisins and biscuit. Be warned: they won\'t last long!</string>
+    <string name="tiffin_text"><b>Ingredients</b>\n
+        • 150g butter, cubed, plus extra for the tin\n
+        • 3 tbsp caster sugar\n
+        • 3 tbsp golden syrup\n
+        • 6 tsp cocoa powder\n
+        • 225g biscuits, crushed\n
+        • handful of raisins\n
+        • 110g milk chocolate\n
+        • 110g dark chocolate\n\n
+
+        <b>Method</b>\n
+        <i>Step 1</i>\nButter and line a 15-20cm tin with baking parchment. In a large saucepan,
+        melt the butter, sugar, syrup and cocoa. Stir through the biscuits and raisins.\n\n
+        <i>Step 2</i>\nPour the mixture into the prepared tin and press down, then smooth the top
+        with the back of a spoon. Microwave both chocolates in short 20 second bursts, stirring
+        frequently, until melted. Pour them over the mixture in the tin. Use a palette knife or
+        spoon to smooth over, so it\'s completely coated in chocolate.\n\n
+        <i>Step 3</i>\nPut the tin into the fridge and leave for about 2 hrs to set, or overnight.
+        Run a kitchen knife under the hot tap then cut into squares.\n</string>
+
+    <!--WHITE CHOCOLATE CHEESECAKE-->
+    <string name="cheesecake">White Chocolate Cheesecake</string>
+    <string name="cheesecake_desc">Make a simple, creamy dessert for a dinner party with very little
+        effort. Pairing this white chocolate cheesecake with fresh fruit offsets the
+        richness.</string>
+    <string name="cheesecake_text"><b>Ingredients</b>\n
+        • 300g digestive biscuits\n
+        • 150g unsalted butter, melted, plus extra to grease\n
+        • 400g white chocolate, broken into pieces\n
+        • 300g full-fat cream cheese\n
+        • 250g mascarpone\n
+        • 300ml double cream\n
+        • 200g strawberries or raspberries, to serve\n\n
+
+        <b>Method</b>\n
+        <i>Step 1</i>\nCrush the biscuits in a food processor until completely ground. Add butter
+        and whizz again until you have the desired crumbly consistency.\n\n
+        <i>Step 2</i>\nGrease and line the base of a 23cm deep, loose-bottomed cake tin. Add the
+        biscuit mixture to the cake tin and pat it flat. Leave to set in the fridge for
+        approximately 30 minutes.\n\n
+        <i>Step 3</i>\nBegin melting the chocolate in a heatproof glass bowl over a small pan of
+        hot water on a low heat. Stir occasionally to prevent sticking. Remove from the heat and
+        leave to cool for 10 minutes until barely warm but still liquid.\n\n
+        <i>Step 4</i>\nMeanwhile whisk the cream cheese and mascarpone together. Add double cream
+        and keep whisking until the mixture is just holding its own shape. Finally, add the melted
+        chocolate and whisk until just combined.\n\n
+        <i>Step 5</i>\nSpoon the mixture over the cooled and set biscuit base, then smooth the top.
+        Return to the fridge to cool for at least 6 hrs until the topping is set. Finally,
+        decorate with fruit.\n</string>
+
+    <!--VANILLA PANNA COTTA-->
+    <string name="panna">Vanilla Panna Cotta</string>
+    <string name="panna_desc">Try making this classic Italian dessert with delicate vanilla and a
+        fresh strawberry topping. The perfect light sweet for a chilled summer gathering.</string>
+    <string name="panna_text"><b>Ingredients</b>\n
+        • 2 ½ sheets gelatine\n
+        • 150ml milk\n
+        • 400ml double cream\n
+        • 60g caster sugar\n
+        • 1 vanilla pod, split length-ways\n
+        • fresh strawberries, to serve\n
+        • strawberry compote, to serve\n\n
+
+        <b>Method</b>\n
+        <i>Step 1</i>\nAdd the sheets of gelatine to a bowl of cold water and soak for 5 minutes.\n\n
+        <i>Step 2</i>\nPour the milk and cream into a saucepan with the sugar and vanilla seeds (to
+        scrape the seeds out of the pod, use the back of a knife). Stir to combine and bring to a
+        simmer, then remove from the heat. Take the gelatine out of the cold water and squeeze out
+        the excess, then add to the milk mixture. Stir until completely dissolved. Tip into four
+        ramekins and place in the fridge to set for at least a couple of hours.\n\n
+        <i>Step 3</i>\nTo serve, turn each ramekin upside-down onto a serving plate. If the panna
+        cotta won\'t drop out, carefully dip the ramekin in a bowl of warm water to loosen it. Serve
+        with a drizzle of strawberry compote and sliced fresh strawberries.\n</string>
+
+    <!--ULTIMATE PLUM & APPLE COBBLER-->
+    <string name="cobbler">Ultimate Plum &amp; Apple Cobbler</string>
+    <string name="cobbler_desc">Slide this pudding into the oven after the Sunday roast has come
+        out. It\'s classic comfort food and the cobbler topping can be used on any stewed fruit.</string>
+    <string name="cobbler_text"><b>Ingredients</b>\n
+        <b>For the fruit</b>\n
+        • 100g butter, cubed\n
+        • 100g golden caster sugar\n
+        • 2 vanilla pods, seeds scraped out\n
+        • 700g firm plums, stoned and roughly chopped\n
+        • 300g Braeburn apples, peeled, cored and chopped\n
+        • 1 tsp cinnamon\n
+        <b>For the cobbler dough</b>\n
+        • 1 egg\n
+        • 100ml milk\n
+        • 140g cold butter, cut into cubes\n
+        • 280g plain flour\n
+        • 140g golden caster sugar\n
+        • ½ tsp cinnamon\n
+        • 1 tbsp baking powder\n
+        • 2 tbsp demerara sugar\n
+        • clotted cream, to serve\n\n
+
+        <b>Method</b>\n
+        <i>Step 1</i>\nFor the fruit, put all the ingredients in a saucepan. Cook over a low heat,
+        stirring until the butter has melted and the sugar has dissolved, then leave to simmer until
+        you have a chunky fruit compote, then set aside.\n\n
+        <i>Step 2</i>\nHeat oven to 190C/170C fan/gas 6. Whisk the egg into the milk and set aside.
+        Rub the butter and the flour together until it has the texture of chunky breadcrumbs, then
+        stir in the caster sugar, cinnamon, baking powder and a large pinch of salt. Pour in the
+        milk mixture and bring together to form a thick, batter-like texture.\n\n
+        <i>Step 3</i>\nTip the compote into a baking dish and top with large spoonfuls of the
+        cobbler mix, making sure there are a few gaps for the fruit to bubble through, then sprinkle
+        everything with the demerara sugar. Bake for 35-40 minutes or until the topping is golden and
+        just cooked through. Remove from the oven and leave to rest for 5 minutes before serving
+        straight from the dish with generous spoonfuls of clotted cream.\n</string>
     <!--LEMON SPONGE CAKE-->
     <!--LEMON SPONGE CAKE-->
     <!--LEMON SPONGE CAKE-->
