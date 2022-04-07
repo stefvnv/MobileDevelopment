@@ -1,75 +1,60 @@
 package com.example.app3;
 
-import androidx.annotation.NonNull;
-
-import com.google.android.material.navigation.NavigationView;
-
-import androidx.core.view.GravityCompat;
-import androidx.drawerlayout.widget.DrawerLayout;
-import androidx.appcompat.app.ActionBarDrawerToggle;
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.os.Bundle;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.view.Window;
+import android.view.WindowManager;
+import android.widget.ImageView;
 
-import androidx.appcompat.widget.Toolbar;
+import androidx.annotation.Nullable;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.Fragment;
+import androidx.recyclerview.widget.GridLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
-import android.view.MenuItem;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Objects;
 
-
-public class HoroscopeActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
-    private DrawerLayout drawer;
+public class HoroscopeActivity extends AppCompatActivity {
+    private final List<HoroscopeData> horoscopeDataList = new ArrayList<>();
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+
+
+        //
+        requestWindowFeature(Window.FEATURE_NO_TITLE);
+        this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
+        Objects.requireNonNull(getSupportActionBar()).hide();
+
         setContentView(R.layout.activity_horoscope);
 
-        Toolbar toolbar = findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
-
-        drawer = findViewById(R.id.drawer_layout);
-        NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
-        navigationView.setNavigationItemSelectedListener(this);
-
-        ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(this, drawer, toolbar,
-                R.string.navigation_drawer_open, R.string.navigation_drawer_close);
-        drawer.addDrawerListener(toggle);
-        toggle.syncState();
-
-        if (savedInstanceState == null) {
-            getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
-                    new HoroscopeFragment()).commit();
-            navigationView.setCheckedItem(R.id.nav_horoscope);
-        }
+        prepareHoroscopeData();
     }
 
-    @Override
-    public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-        switch (item.getItemId()) {
-            case R.id.nav_horoscope:
-                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
-                        new HoroscopeFragment()).commit();
-                break;
-            case R.id.nav_signs:
-                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
-                        new SignsFragment()).commit();
-                break;
-            case R.id.nav_planets:
-                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
-                        new PlanetsFragment()).commit();
-                break;
-        }
 
-        drawer.closeDrawer(GravityCompat.START);
-        return true;
-    }
+    private void prepareHoroscopeData() {
+        RecyclerView recyclerView = findViewById(R.id.recycler_view);
+        ImageView imageView = findViewById(R.id.imageView);
 
-    @Override
-    public void onBackPressed() {
-        if (drawer.isDrawerOpen(GravityCompat.START)) {
-            drawer.closeDrawer(GravityCompat.START);
-        } else {
-            super.onBackPressed();
+        HoroscopeAdapter horoscopeAdapter = new HoroscopeAdapter(this, horoscopeDataList);
+        RecyclerView.LayoutManager manager = new GridLayoutManager(getApplicationContext(), 3);
+        recyclerView.setLayoutManager(manager);
+        recyclerView.setAdapter(horoscopeAdapter);
+
+        String[] zodiacArray = {"Taurus", "Gemini", "Cancer", "Leo", "Virgo", "Libra", "Scorpio", "Sagittarius", "Capricorn", "Aquarius", "Pisces"};
+
+        HoroscopeData horoscopeData = new HoroscopeData("ARIES", "ariesimg", imageView);
+        horoscopeDataList.add(horoscopeData);
+
+        for (String zodiac : zodiacArray) {
+            horoscopeData = new HoroscopeData(zodiac.toUpperCase(), zodiac.toLowerCase() + "img", imageView);
+            horoscopeDataList.add(horoscopeData);
         }
     }
 }
