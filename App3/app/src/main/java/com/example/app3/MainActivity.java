@@ -39,11 +39,10 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         toggle.syncState();
 
         if (savedInstanceState == null) {
-            //getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
-            //new HoroscopeFragment()).commit();
-            startActivity(new Intent(this, HoroscopeActivity.class));
+            getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
+            new AstrologyFragment()).commit();
 
-            navigationView.setCheckedItem(R.id.nav_horoscope);
+            navigationView.setCheckedItem(R.id.nav_astrology);
         }
     }
 
@@ -51,10 +50,12 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
         switch (item.getItemId()) {
+            case R.id.nav_astrology:
+                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
+                        new AstrologyFragment()).commit();
+                break;
             case R.id.nav_horoscope:
                 startActivity(new Intent(this, HoroscopeActivity.class));
-                //getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
-                //new HoroscopeFragment()).commit();
                 break;
             case R.id.nav_signs:
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,

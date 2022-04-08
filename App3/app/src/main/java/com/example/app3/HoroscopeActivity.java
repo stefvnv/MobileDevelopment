@@ -44,7 +44,7 @@ public class HoroscopeActivity extends AppCompatActivity {
         ImageView imageView = findViewById(R.id.imageView);
 
         HoroscopeAdapter horoscopeAdapter = new HoroscopeAdapter(this, horoscopeDataList);
-        RecyclerView.LayoutManager manager = new GridLayoutManager(getApplicationContext(), 3);
+        RecyclerView.LayoutManager manager = new GridLayoutManager(getApplicationContext(), 2);
         recyclerView.setLayoutManager(manager);
         recyclerView.setAdapter(horoscopeAdapter);
 
