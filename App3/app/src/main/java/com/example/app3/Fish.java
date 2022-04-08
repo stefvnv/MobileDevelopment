@@ -1,7 +1,5 @@
 package com.example.app3;
 
-import java.util.Arrays;
-
 public class Fish {
 
     private String date_range = "", current_date = "", description = "", compatibility = "", mood = "", color = "", lucky_number = "", lucky_time = "";
@@ -40,17 +38,13 @@ public class Fish {
     }
 
     public Fish() {
-
     }
 
-    public Fish(String toParse) {
-        this.toParse = toParse;
-    }
+
 
 
     public void foStuff(String toParse) {
         if (!toParse.equalsIgnoreCase("")) {
-            //String toParse = "{\"date_range\": \"Jan 20 - Feb 18\", \"current_date\": \"April 7, 2022\", \"description\": \"You're cut out for quite a fun, lively and interesting evening, even if you spend it at home. You'll only be alone if you really want to be  -- which you probably won't.\", \"compatibility\": \"Aries\", \"mood\": \"Playful\", \"color\": \"Peach\", \"lucky_number\": \"85\", \"lucky_time\": \"12pm\"}";
             toParse = toParse.replaceAll("[}:,{]", "");
             String[] split = toParse.split("\"");
             for (int i = 0; i < split.length; i++) {
@@ -64,11 +58,6 @@ public class Fish {
             color = split[23];
             lucky_number = split[27];
             lucky_time = split[31];
-
-/**
- System.out.println("Date range = " + date_range + " current date = " + current_date + " description = " + description + " comnpat = " + compatibility + " mood = " + mood
- + " colour = " + color + " lucky num = " + lucky_number + " lucky time = " + lucky_time);**/
         }
     }
-
 }

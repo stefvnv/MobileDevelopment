@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/drawer_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/backgroundb"
     android:fitsSystemWindows="true"
     tools:context="com.example.app3.MainActivity"
     tools:openDrawer="start">
@@ -21,20 +23,39 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="16dp"
                 android:layout_marginEnd="16dp"
-                android:layout_marginBottom="16dp"
+                android:layout_marginBottom="30dp"
                 android:text="What's your sign?"
-                android:textColor="@color/black"
-                android:textSize="26sp" />
+                android:textColor="#ccc65a"
+                android:textSize="28sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:adjustViewBounds="true"
+                android:scaleType="centerInside"
+                app:srcCompat="@drawable/chart" />
 
             <Button
                 android:id="@+id/findButton"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="100dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="100dp"
+                android:backgroundTint="#6E81EA"
                 android:onClick="findButtMeth"
-                android:text="Choose date" />
+                android:text="Enter birthday"
+                android:textColor="#C3C3C3"
+                android:textSize="16sp"
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/signText"
@@ -43,20 +64,29 @@
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="16dp"
                 android:layout_marginEnd="16dp"
-                android:layout_marginBottom="16dp"
-                android:textColor="@color/black"
-                android:textSize="20sp" />
+                android:textColor="@color/white"
+                android:textSize="22sp" />
 
             <TextView
                 android:id="@+id/signTextDesc"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
-                android:layout_marginTop="16dp"
                 android:layout_marginEnd="16dp"
                 android:layout_marginBottom="16dp"
-                android:textColor="@color/black"
-                android:textSize="16sp" />
+                android:textColor="@color/white"
+                android:text="Your zodiac sign can help you understand how you relate to others and what aspects of your personality need work. Enter your birthday to find out your sign."
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/moreButton"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="120dp"
+                android:layout_marginEnd="120dp"
+                android:onClick="findButtMeth"
+                android:text="Read more" />
         </LinearLayout>
     </ScrollView>
 

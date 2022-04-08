@@ -14,25 +14,32 @@ import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.appcompat.widget.Toolbar;
+import androidx.recyclerview.widget.GridLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.DatePicker;
+import android.widget.ImageView;
 import android.widget.TextView;
 
+import java.util.ArrayList;
 import java.util.Calendar;
+import java.util.List;
 
 
 public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener, DatePickerDialog.OnDateSetListener {
     private DrawerLayout drawer;
-    //private Button doButt;
+    private HoroscopeFragment hf = new HoroscopeFragment();
 
-    //-----------for find
+    //for find
     Button findButton;
     TextView signText;
     TextView signTextDesc;
     String toSet = "";
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -52,11 +59,12 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         drawer.addDrawerListener(toggle);
         toggle.syncState();
 
+        //prepareHoroscopeData();
+
         if (savedInstanceState == null) {
             getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
-                    new AstrologyFragment()).commit();
-
-            navigationView.setCheckedItem(R.id.nav_astrology);
+                    new FindFragment()).commit();
+            navigationView.setCheckedItem(R.id.nav_find);
         }
     }
 
@@ -64,12 +72,15 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
         switch (item.getItemId()) {
-            case R.id.nav_astrology:
-                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
-                        new AstrologyFragment()).commit();
-                break;
             case R.id.nav_horoscope:
-                startActivity(new Intent(this, HoroscopeActivity.class));
+                //startActivity(new Intent(this, HoroscopeActivity.class));
+                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
+                        new HoroscopeFragment()).commit();
+
+                break;
+            case R.id.nav_find:
+                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
+                        new FindFragment()).commit();
                 break;
             case R.id.nav_signs:
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
@@ -78,19 +89,8 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             case R.id.nav_planets:
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
                         new PlanetsFragment()).commit();
-                //doButt = findViewById(R.id.doButt);
-
-                break;
-            case R.id.nav_find:
-                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
-                        new FindFragment()).commit();
-
-
-
-
                 break;
         }
-
         drawer.closeDrawer(GravityCompat.START);
         return true;
     }
@@ -103,7 +103,10 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             super.onBackPressed();
         }
     }
-    public void doThePoo (View view){
+
+
+    //TEST DELETE
+    public void doThePoo(View view) {
         System.out.println("Poopin");
     }
 
@@ -113,8 +116,8 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     public void onDateSet(DatePicker view, int year, int month, int day) {
         signText.setText(getSign(day, month));
         signTextDesc.setText(toSet);
-
     }
+
     private String getSign(int day, int month) {
         String sign = "";
 
@@ -219,7 +222,6 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     }
 
     public void findButtMeth(View v) {
-        System.out.println("we poopin?");
         Calendar calendar = Calendar.getInstance();
         int year = calendar.get(Calendar.YEAR);
         int month = calendar.get(Calendar.MONTH);
@@ -231,4 +233,8 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 MainActivity.this, year, month, day);
         datePickerDialog.show();
     }
+
+
+
 }
+
