@@ -41,8 +41,6 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         if (savedInstanceState == null) {
             //getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
             //new HoroscopeFragment()).commit();
-
-
             startActivity(new Intent(this, HoroscopeActivity.class));
 
             navigationView.setCheckedItem(R.id.nav_horoscope);
@@ -54,10 +52,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
         switch (item.getItemId()) {
             case R.id.nav_horoscope:
-
-                //Open new activity instead of fragment
                 startActivity(new Intent(this, HoroscopeActivity.class));
-
                 //getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
                 //new HoroscopeFragment()).commit();
                 break;
@@ -68,6 +63,9 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             case R.id.nav_planets:
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
                         new PlanetsFragment()).commit();
+                break;
+            case R.id.nav_find:
+                startActivity(new Intent(this, FindActivity.class));
                 break;
         }
 

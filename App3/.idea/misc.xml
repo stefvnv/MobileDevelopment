@@ -3,16 +3,19 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/Stefana/Git/MobileDeveopment/App3/app/src/main/res/layout/activity_find.xml" value="0.33" />
         <entry key="..\:/Users/Stefana/Git/MobileDeveopment/App3/app/src/main/res/layout/activity_horoscope.xml" value="0.32407407407407407" />
         <entry key="..\:/Users/Stefana/Git/MobileDeveopment/App3/app/src/main/res/layout/activity_horoscope_details.xml" value="0.3484375" />
         <entry key="..\:/Users/Stefana/Git/MobileDeveopment/App3/app/src/main/res/layout/activity_main.xml" value="0.35260416666666666" />
+        <entry key="..\:/Users/Stefana/Git/MobileDeveopment/App3/app/src/main/res/layout/activity_splash.xml" value="0.3472222222222222" />
+        <entry key="..\:/Users/Stefana/Git/MobileDeveopment/App3/app/src/main/res/layout/fragment_find.xml" value="0.25625" />
         <entry key="..\:/Users/Stefana/Git/MobileDeveopment/App3/app/src/main/res/layout/fragment_horoscope.xml" value="0.3569230769230769" />
         <entry key="..\:/Users/Stefana/Git/MobileDeveopment/App3/app/src/main/res/layout/fragment_planets.xml" value="0.3569230769230769" />
         <entry key="..\:/Users/Stefana/Git/MobileDeveopment/App3/app/src/main/res/layout/fragment_signs.xml" value="0.3569230769230769" />
         <entry key="..\:/Users/Stefana/Git/MobileDeveopment/App3/app/src/main/res/layout/horoscope_list_row.xml" value="0.3625" />
-        <entry key="..\:/Users/Stefana/Git/MobileDeveopment/App3/app/src/main/res/layout/nav_header.xml" value="0.18541666666666667" />
+        <entry key="..\:/Users/Stefana/Git/MobileDeveopment/App3/app/src/main/res/layout/nav_header.xml" value="0.33" />
         <entry key="..\:/Users/Stefana/Git/MobileDeveopment/App3/app/src/main/res/layout/toolbar.xml" value="0.28055555555555556" />
-        <entry key="..\:/Users/Stefana/Git/MobileDeveopment/App3/app/src/main/res/menu/drawer_menu.xml" value="0.18541666666666667" />
+        <entry key="..\:/Users/Stefana/Git/MobileDeveopment/App3/app/src/main/res/menu/drawer_menu.xml" value="0.33" />
         <entry key="..\:/Users/Stefana/Git/MobileDeveopment/App3/app/src/main/res/menu/drawer_view.xml" value="0.25" />
       </map>
     </option>
@@ -22,5 +25,12 @@
   </component>
   <component name="ProjectType">
     <option name="id" value="Android" />
+  </component>
+  <component name="VisualizationToolProject">
+    <option name="state">
+      <ProjectState>
+        <option name="scale" value="0.18541666666666667" />
+      </ProjectState>
+    </option>
   </component>
 </project>

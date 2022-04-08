@@ -8,20 +8,34 @@ import android.view.Window;
 import android.view.WindowManager;
 import android.widget.TextView;
 
-import com.android.volley.AuthFailureError;
-import com.android.volley.Request;
-import com.android.volley.RequestQueue;
-import com.android.volley.Response;
-import com.android.volley.VolleyError;
-import com.android.volley.toolbox.JsonObjectRequest;
-import com.android.volley.toolbox.StringRequest;
-import com.android.volley.toolbox.Volley;
+import org.w3c.dom.Text;
 
-import java.util.HashMap;
-import java.util.Map;
+import java.io.IOException;
+
+import okhttp3.OkHttpClient;
+import okhttp3.Request;
+import okhttp3.RequestBody;
+import okhttp3.Response;
 
 public class HoroscopeDetailsActivity extends AppCompatActivity {
-    TextView textView;
+
+    TextView horoscopeTitle;
+
+    TextView dateRange;
+    TextView currentDate;
+    TextView description;
+    TextView compatibility;
+    TextView mood;
+    TextView color;
+    TextView luckyNumber;
+    TextView luckyTime;
+
+
+    //TextView horoscopeText;
+    String pooop;
+
+
+    private Fish delish = new Fish();
 
     @SuppressLint("WrongThread")
     @Override
@@ -33,49 +47,71 @@ public class HoroscopeDetailsActivity extends AppCompatActivity {
         getSupportActionBar().hide();
         setContentView(R.layout.activity_horoscope_details);
 
-        textView = findViewById(R.id.horoscopeText);
+        horoscopeTitle = findViewById(R.id.horoscopeTitle);
+        dateRange = findViewById(R.id.dateRange);
+        currentDate = findViewById(R.id.currentDate);
+        description = findViewById(R.id.description);
+        compatibility = findViewById(R.id.compatibilityText);
+        mood = findViewById(R.id.moodText);
+        color = findViewById(R.id.colorText);
+        luckyNumber = findViewById(R.id.numberText);
+        luckyTime = findViewById(R.id.timeText);
+
+
+        //horoscopeText = findViewById(R.id.horoscopeText);
+
+
         String zodiacName = getIntent().getStringExtra("zodiacName");
 
         populateHoroscope(zodiacName);
+
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        delish.foStuff(pooop);
+
+        horoscopeTitle.setText(zodiacName);
+        dateRange.setText(delish.getDate_range());
+        currentDate.setText(delish.getCurrent_date());
+        description.setText(delish.getDescription());
+        compatibility.setText(delish.getCompatibility());
+        mood.setText(delish.getMood());
+        color.setText(delish.getColor());
+        luckyNumber.setText(delish.getLucky_number());
+        luckyTime.setText(delish.getLucky_time());
+
+        //horoscopeText.setText(delish.getDescription());
+
     }
 
 
     private void populateHoroscope(String zodiacName) {
+        Thread threadRun = new Thread() {
 
-        //Instantiate the RequestQueue
-        RequestQueue queue = Volley.newRequestQueue(this);
-       // String url = "https://sameer-kumar-aztro-v1.p.rapidapi.com/?sign=" + zodiacName + "&day=today";
-        String url = "https://sameer-kumar-aztro-v1.p.rapidapi.com/?sign=aquarius&day=today";
+            public void run() {
+                OkHttpClient client = new OkHttpClient();
+                RequestBody requestBody = RequestBody.create(null, new byte[0]);
 
-        //Request a string response from the URL
+                Request request = new Request.Builder()
+                        .url("https://sameer-kumar-aztro-v1.p.rapidapi.com/?sign=" + zodiacName + "&day=today")
+                        .post(requestBody)
+                        .addHeader("X-RapidAPI-Host", "sameer-kumar-aztro-v1.p.rapidapi.com")
+                        .addHeader("X-RapidAPI-Key", "f1b4c9f622msh1660ebad06a3ff6p15e847jsn35f5cb2b40c5")
+                        .build();
 
-        //StringRequest stringRequest = new StringRequest(Request.Method.GET, url,
-        StringRequest stringRequest = new StringRequest(Request.Method.GET, url,
-                new Response.Listener<String>() {
-                    @Override
-                    public void onResponse(String response) {
-                        // Display the first 500 characters of the response string.
-                        textView.setText("Response is: " + response.substring(0, 500));
+                Response response;
+                {
+                    try {
+                        response = client.newCall(request).execute();
+                        pooop = response.body().string();
+                    } catch (IOException | NullPointerException e) {
+                        e.printStackTrace();
                     }
-                }, new Response.ErrorListener() {
-            @Override
-            public void onErrorResponse(VolleyError error) {
-                textView.setText("That didn't work!");
-            }
-        }
-        ) {
-            @Override
-            public Map<String, String> getHeaders() throws AuthFailureError {
-                Map<String, String> params = new HashMap<String, String>();
-                params.put("X-RapidAPI-Host", "sameer-kumar-aztro-v1.p.rapidapi.com");
-                params.put("X-RapidAPI-Key", "f1b4c9f622msh1660ebad06a3ff6p15e847jsn35f5cb2b40c5");
-                //params.put("x-vacationtoken", "secret_token");
-                //params.put("content-type", "application/json");
-                //params.put("x-vacationtoken", "secret_token");
-                return params;
+                }
             }
         };
-        // Add the request to the RequestQueue.
-        queue.add(stringRequest);
+        threadRun.start();
     }
 }

@@ -35,6 +35,7 @@ public class HoroscopeActivity extends AppCompatActivity {
         setContentView(R.layout.activity_horoscope);
 
         prepareHoroscopeData();
+        //
     }
 
 

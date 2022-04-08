@@ -4,6 +4,8 @@
     tools:showIn="navigation_view">
 
     <group android:checkableBehavior="single">
+        <item android:id="@+id/nav_find"
+            android:title="What's your sign?" />
         <item
             android:id="@+id/nav_horoscope"
             android:title="Daily Horoscope" />
