@@ -42,7 +42,6 @@ public class Fish {
 
 
 
-
     public void foStuff(String toParse) {
         if (!toParse.equalsIgnoreCase("")) {
             toParse = toParse.replaceAll("[}:,{]", "");
@@ -60,4 +59,5 @@ public class Fish {
             lucky_time = split[31];
         }
     }
+
 }

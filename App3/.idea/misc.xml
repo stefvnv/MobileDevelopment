@@ -11,8 +11,8 @@
         <entry key="..\:/Users/Stefana/Git/MobileDeveopment/App3/app/src/main/res/layout/fragment_astrology.xml" value="0.2898148148148148" />
         <entry key="..\:/Users/Stefana/Git/MobileDeveopment/App3/app/src/main/res/layout/fragment_find.xml" value="0.33" />
         <entry key="..\:/Users/Stefana/Git/MobileDeveopment/App3/app/src/main/res/layout/fragment_horoscope.xml" value="0.3569230769230769" />
-        <entry key="..\:/Users/Stefana/Git/MobileDeveopment/App3/app/src/main/res/layout/fragment_planets.xml" value="0.3569230769230769" />
-        <entry key="..\:/Users/Stefana/Git/MobileDeveopment/App3/app/src/main/res/layout/fragment_signs.xml" value="0.25" />
+        <entry key="..\:/Users/Stefana/Git/MobileDeveopment/App3/app/src/main/res/layout/fragment_planets.xml" value="0.20434527304756311" />
+        <entry key="..\:/Users/Stefana/Git/MobileDeveopment/App3/app/src/main/res/layout/fragment_signs.xml" value="0.22" />
         <entry key="..\:/Users/Stefana/Git/MobileDeveopment/App3/app/src/main/res/layout/horoscope_list_row.xml" value="0.3625" />
         <entry key="..\:/Users/Stefana/Git/MobileDeveopment/App3/app/src/main/res/layout/nav_header.xml" value="0.33" />
         <entry key="..\:/Users/Stefana/Git/MobileDeveopment/App3/app/src/main/res/layout/toolbar.xml" value="0.28055555555555556" />
@@ -30,7 +30,7 @@
   <component name="VisualizationToolProject">
     <option name="state">
       <ProjectState>
-        <option name="scale" value="0.18541666666666667" />
+        <option name="scale" value="0.33" />
       </ProjectState>
     </option>
   </component>

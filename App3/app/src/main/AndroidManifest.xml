@@ -15,20 +15,13 @@
             android:name=".HoroscopeDetailsActivity"
             android:exported="false" />
         <activity
-            android:name=".HoroscopeActivity"
-            android:exported="false" />
-        <activity
-            android:name=".FindActivity"
-            android:exported="false"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity
             android:name=".MainActivity"
             android:exported="false"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".SplashActivity"
             android:exported="true"
-            android:theme="@style/AppTheme.NoActionBar">
+            >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
