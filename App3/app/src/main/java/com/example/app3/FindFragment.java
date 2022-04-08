@@ -9,11 +9,16 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-public class AstrologyFragment extends Fragment {
+
+public class FindFragment extends Fragment {
+
 
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.fragment_astrology, container, false);
+        // Defines the xml file for the fragment
+        return inflater.inflate(R.layout.fragment_find, container, false);
     }
+
+
 }
